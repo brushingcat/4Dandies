@@ -1,9 +1,3 @@
-
-deployment:
-
-  staging:
-    branch: master
-
 dependencies:
   pre:
     - gem uninstall bundler
