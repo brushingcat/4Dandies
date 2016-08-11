@@ -19,3 +19,9 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+# Ignore ruby mine files
+.idea/
+
+#ignore Gemfile.lock
+Gemfile.lock
+
