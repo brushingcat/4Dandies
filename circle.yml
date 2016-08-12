@@ -1,7 +1,7 @@
 dependencies:
   pre:
     - gem install rack -v '2.0.1'
-    - gem install bundler --pre
+    - gem install bundler -v '1.12.5'
 
 
 deployment:
