@@ -4,7 +4,7 @@ dependencies:
     - gem install bundler -v '1.12.5'
 
 deployment:
-  production:
+  staging:
     commands:
       - heroku maintenance:on --app blooming-spire-63839
       - heroku scale worker=0 --app blooming-spire-63839
