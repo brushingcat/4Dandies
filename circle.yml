@@ -3,10 +3,11 @@ dependencies:
     - gem install rack -v '2.0.1'
     - gem install bundler -v '1.12.5'
 
-
 deployment:
-  staging:
+  production:
     branch: master
-    heroku:
-      appname: blooming-spire-63839
+    commands:
+      - git push git@heroku.com:blooming-spire-63839.git $CIRCLE_SHA1:master
+      - heroku run rake db:migrate --app blooming-spire-63839
+
 
