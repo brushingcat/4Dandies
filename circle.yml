@@ -2,10 +2,6 @@ dependencies:
   pre:
     - gem install rack -v '2.0.1'
 
-database:
-  override:
-    - mv config/database.ci.yml config/database.yml
-    - bundle exec rake db:create db:schema:load --trace
 
 deployment:
   staging:
