@@ -5,9 +5,10 @@ dependencies:
 
 deployment:
   production:
-    branch: master
     commands:
-      - git push git@heroku.com:blooming-spire-63839.git $CIRCLE_SHA1:master
+      - heroku maintenance:on --app blooming-spire-63839
+      - heroku scale worker=0 --app blooming-spire-63839
+      - git push git@heroku.com:blooming-spire-63839.git $CIRCLE_SHA1:refs/heads/master
       - heroku run rake db:migrate --app blooming-spire-63839
-
-
+      - heroku scale worker=x --app blooming-spire-63839
+      - heroku maintenance:off --app blooming-spire-63839
