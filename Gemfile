@@ -57,4 +57,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'omniauth-facebook'
+<<<<<<< HEAD
 gem 'omniauth-google-oauth2'
+=======
+gem 'omniauth-twitter'
+>>>>>>> 5cfe48b7a98bdcd8ccc9708458efe351b316026f
