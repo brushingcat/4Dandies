@@ -254,6 +254,9 @@ Devise.setup do |config|
   config.omniauth :google_oauth2, "880509856017-7vb2i1ie8m65l4qbcvj35kss4ffs5lmi.apps.googleusercontent.com",
                   "eCH2c9H5hRC-xWdahlr2qmGO"
 
+  config.omniauth :instagram, "f94b9e27c8324ca3b485d61c7774a934",
+                 "b76567c5a25149fc98daaea86ce41674"
+
   config.omniauth :twitter, "RMJHuinM1RfWPCJebmFLsFCYi", "6jmMVaopsGtMaoGPnQYHM9mMxSgkiH4lfUxpU9nBK4WYp3O5tP"
 
 

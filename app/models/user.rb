@@ -3,12 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   #devise :database_authenticatable, :registerable,
   #       :recoverable, :rememberable, :trackable, :validatable
-<<<<<<< HEAD
-  devise :database_authenticatable, :registerable, :validatable, :omniauthable, :omniauth_providers => [:facebook, :google_oauth2]
-=======
-  devise :database_authenticatable, :registerable, :validatable,
-         :omniauthable, :omniauth_providers => [:facebook, :twitter]
->>>>>>> 5cfe48b7a98bdcd8ccc9708458efe351b316026f
+  devise :database_authenticatable, :registerable, :validatable, :omniauthable, :omniauth_providers => [:facebook, :google_oauth2, :twitter, :instagram]
+
 
 
   def self.new_with_session(params, session)
