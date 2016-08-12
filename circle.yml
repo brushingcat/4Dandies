@@ -7,7 +7,5 @@ deployment:
   staging:
     branch: master
     commands:
-      - heroku maintenance:on --app blooming-spire-63839
       - git push git@heroku.com:blooming-spire-63839.git $CIRCLE_SHA1:refs/heads/master
       - heroku run rake db:migrate --app blooming-spire-63839
-      - heroku maintenance:off --app blooming-spire-63839
