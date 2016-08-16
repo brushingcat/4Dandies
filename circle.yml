@@ -7,7 +7,8 @@ dependencies:
 
 test:
   pre:
-    - bundle exec rake db:reset
+    - bin/rails db:drop
+    - bin/rails db:create
     - bin/rails db:migrate
   post:
     - bundle exec rake test
