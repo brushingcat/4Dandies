@@ -7,7 +7,7 @@ dependencies:
 
 test:
   pre:
-    - bin/rails db:migrate RAILS_ENV=test
+    - bundle exec rake db:reset
   post:
     - bundle exec rake test
     - bin/rails test
