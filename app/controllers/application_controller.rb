@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   end
 
   def index
-    flash[:notice] = t(:hello_flash)
+    #flash[:notice] = t(:hello_flash)
   end
 
   private
