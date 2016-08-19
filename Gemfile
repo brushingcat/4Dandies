@@ -61,3 +61,5 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
 gem 'omniauth-instagram'
 gem 'codecov', :require => false, :group => :test
+gem 'routing-filter'
+gem 'http_accept_language'
