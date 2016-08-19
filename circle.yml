@@ -9,14 +9,10 @@ dependencies:
 database:
   override:
     # replace CircleCI's generated database.yml
- 
+
     - bundle exec rake db:create db:migrate
 
 test:
-  pre:
-    - bin/rails db:drop
-    - bin/rails db:create
-    - bin/rails db:migrate
   override:
     - bundle exec rspec
   post:
