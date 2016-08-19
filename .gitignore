@@ -21,6 +21,8 @@
 .byebug_history
 # Ignore ruby mine files
 .idea/
+.codecov/
+
 
 #ignore Gemfile.lock
 Gemfile.lock

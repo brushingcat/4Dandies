@@ -12,4 +12,5 @@ test:
     - bin/rails db:migrate
   post:
     - bin/rails test
+    - bundle exec rspec
 
