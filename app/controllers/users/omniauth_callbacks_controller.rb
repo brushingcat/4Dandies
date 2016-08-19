@@ -24,10 +24,11 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       #sign_in_and_redirect @user, :event => :authentication #this will throw
       # if @user is not activated
       redirect_to root_path
-      set_flash_message(:notice, :success, :kind => "#{provider}") if is_navigational_format?
+      set_flash_message(:notice, :success, :kind => "#{provider}") if
+          is_navigational_format?
     else
       redirect_to root_path
-      set_flash_message(:alert, :failure, :kind => "#{provider}") if
+      set_flash_message(:alert, :failure ,:kind => "#{provider}", :reason =>"invalid information") if
           is_navigational_format?
       #session["devise.data"] = request.env["omniauth.auth"]
 
