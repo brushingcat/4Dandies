@@ -1,5 +1,34 @@
 require 'spec_helper'
 
+describe 'Login with Omniauth' do
+  it "Invalid User Info it should be invalid" do
+    OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
+         provider: "google_oauth2",
+         uid: '123545',
+         info: {
+             first_name: "Gaius",
+             last_name:  "Baltar",
+             image_url:  "image.com"
+         },
+         credentials: {
+             token: "123456",
+             expires_at: Time.now + 1.week
+         },
+         extra: {
+             raw_info: {
+                 gender: 'male'
+             }
+         }
+     })
+
+    get "/users/auth/google_oauth2/callback"
+
+    request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
+
+    @user = User.first
+    @user.should be_nil
+  end
+end
 
 describe 'Login with Google' do
 
@@ -28,7 +57,6 @@ describe 'Login with Google' do
 
     @user = User.first
     @user.should be_nil
-
   end
 end
 
