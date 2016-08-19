@@ -21,6 +21,8 @@
 .byebug_history
 # Ignore ruby mine files
 .idea/
+coverage/
+
 
 #ignore Gemfile.lock
 Gemfile.lock

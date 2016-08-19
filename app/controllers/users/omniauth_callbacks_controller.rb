@@ -1,3 +1,5 @@
+require 'pp'
+
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def facebook
     generic_callback('Facebook')

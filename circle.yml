@@ -11,5 +11,5 @@ test:
     - bin/rails db:create
     - bin/rails db:migrate
   post:
-    - bin/rails test
-
+    - bundle exec rspec
+    - bash <(curl -s https://codecov.io/bash)

@@ -32,7 +32,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'rspec', '~> 3.0'
+gem 'rspec-rails'
+gem 'rspec'
+gem 'capybara'
 
 group :development, :test do
   gem 'sqlite3'
