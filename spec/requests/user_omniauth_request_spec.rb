@@ -26,7 +26,7 @@ describe 'Login with Omniauth' do
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
     @user = User.first
-    @user.should be_nil
+    expect(@user).to be_nil
   end
 end
 
@@ -45,18 +45,18 @@ describe 'Login with Google' do
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
     @user = User.first
-    @user.should_not be_nil
+    expect(@user).not_to be_nil
   end
 
   it "Invalid credentials it should be invalid" do
     OmniAuth.config.mock_auth[:google_oauth2] = :invalid_credentials
 
-    get "/users/auth/google_oauth2/callback"
+    silence_omniauth {get "/users/auth/google_oauth2/callback"}
 
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
     @user = User.first
-    @user.should be_nil
+    expect(@user).to be_nil
   end
 end
 
@@ -75,18 +75,18 @@ describe 'Login with Facebook' do
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook]
 
     @user = User.first
-    @user.should_not be_nil
+    expect(@user).not_to be_nil
   end
 
   it "Invalid credentials it should be invalid" do
     OmniAuth.config.mock_auth[:facebook] = :invalid_credentials
 
-    get "/users/auth/facebook/callback"
+    silence_omniauth {get "/users/auth/facebook/callback"}
 
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook]
 
     @user = User.first
-    @user.should be_nil
+    expect(@user).to be_nil
 
   end
 end
@@ -106,18 +106,18 @@ describe 'Login with Twitter' do
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:twitter]
 
     @user = User.first
-    @user.should_not be_nil
+    expect(@user).not_to be_nil
   end
 
   it "Invalid credentials it should be invalid" do
     OmniAuth.config.mock_auth[:twitter] = :invalid_credentials
 
-    get "/users/auth/twitter/callback"
+    silence_omniauth {get "/users/auth/twitter/callback"}
 
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:twitter]
 
     @user = User.first
-    @user.should be_nil
+    expect(@user).to be_nil
 
   end
 end
@@ -137,18 +137,18 @@ describe 'Login with Instagram' do
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:instagram]
 
     @user = User.first
-    @user.should_not be_nil
+    expect(@user).not_to be_nil
   end
 
   it "Invalid credentials it should be invalid" do
     OmniAuth.config.mock_auth[:instagram] = :invalid_credentials
 
-    get "/users/auth/instagram/callback"
+    silence_omniauth {get "/users/auth/instagram/callback"}
 
     request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:instagram]
 
     @user = User.first
-    @user.should be_nil
+    expect(@user).to be_nil
 
   end
 end
