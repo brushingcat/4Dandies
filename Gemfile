@@ -62,3 +62,4 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
 gem 'omniauth-instagram'
+gem 'codecov', :require => false, :group => :test
