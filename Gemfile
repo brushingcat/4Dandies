@@ -65,3 +65,6 @@ gem 'omniauth-instagram'
 gem 'codecov', :require => false, :group => :test
 gem 'routing-filter'
 gem 'http_accept_language'
+
+
+gem 'frontend-generators'
