@@ -48,6 +48,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
 end
 
 group :production do
@@ -65,6 +66,6 @@ gem 'omniauth-instagram'
 gem 'codecov', :require => false, :group => :test
 gem 'routing-filter'
 gem 'http_accept_language'
-
-
 gem 'frontend-generators'
+gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
+gem "gibbon"
