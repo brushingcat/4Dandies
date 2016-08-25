@@ -249,16 +249,14 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, "1754062171540927",
-                  "74848757cb5dd8fb42a0f07b6834859b"
+  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET']
 
-  config.omniauth :google_oauth2, "880509856017-7vb2i1ie8m65l4qbcvj35kss4ffs5lmi.apps.googleusercontent.com",
-                  "eCH2c9H5hRC-xWdahlr2qmGO"
+  config.omniauth :google_oauth2, ENV['GOOGLE_APP_ID'], ENV['GOOGLE_APP_SECRET']
 
-  config.omniauth :instagram, "f94b9e27c8324ca3b485d61c7774a934",
-                 "b76567c5a25149fc98daaea86ce41674"
+  config.omniauth :instagram, ENV['INSTAGRAM_APP_ID'],
+                  ENV['INSTAGRAM_APP_SECRET']
 
-  config.omniauth :twitter, "RMJHuinM1RfWPCJebmFLsFCYi", "6jmMVaopsGtMaoGPnQYHM9mMxSgkiH4lfUxpU9nBK4WYp3O5tP"
+  config.omniauth :twitter, ENV['TWITTER_APP_ID'], ENV['TWITTER_APP_SECRET']
 
 
   # ==> Warden configuration
