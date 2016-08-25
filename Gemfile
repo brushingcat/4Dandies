@@ -68,4 +68,5 @@ gem 'routing-filter'
 gem 'http_accept_language'
 gem 'frontend-generators'
 gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
-gem "gibbon"
+gem 'gibbon'
+gem 'sidekiq'
