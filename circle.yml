@@ -16,4 +16,4 @@ test:
   override:
     - bundle exec rspec
   post:
-    - bash <(curl -s https://codecov.io/bash) -t <%= ENV['CODECOV_TOKEN']%>
+    - bash <(curl -s https://codecov.io/bash) -t ac498aa5-a833-47c3-8a40-06cc23dd6dd9
