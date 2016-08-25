@@ -66,5 +66,5 @@ gem 'codecov', :require => false, :group => :test
 gem 'routing-filter'
 gem 'http_accept_language'
 
-
+gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
 gem 'frontend-generators'
