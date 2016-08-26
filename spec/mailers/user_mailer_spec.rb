@@ -1,13 +1,15 @@
 require "rails_helper"
 
-RSpec.describe UserMailerMailer, type: :mailer do
+RSpec.describe UserMailer, type: :mailer do
   describe "welcome_email" do
-    let(:mail) { UserMailerMailer.welcome_email }
+    fixtures :users
+    let(:user) { user=users(:michael) }
+    let(:mail) { UserMailer.welcome_email(user).deliver_now }
 
     it "renders the headers" do
-      expect(mail.subject).to eq("Welcome email")
-      expect(mail.to).to eq(["to@example.org"])
-      expect(mail.from).to eq(["from@example.com"])
+      expect(mail.subject).to eq("Welcome to 4")
+      expect(mail.to).to eq(["michael@example.com"])
+      expect(mail.from).to eq(["noreply@example.com"])
     end
 
     it "renders the body" do
