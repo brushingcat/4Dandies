@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-  after_create :send_welcome_email_to_user
  # VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
  # validates :email, presence: true, length: { maximum: 255 },
   #          format: { with: VALID_EMAIL_REGEX }
@@ -9,9 +8,10 @@ class User < ApplicationRecord
   #       :recoverable, :rememberable, :trackable, :validatable
   devise :database_authenticatable, :registerable, :validatable, :omniauthable, :omniauth_providers => [:facebook, :google_oauth2, :twitter, :instagram]
 
-  after_create :subscribe_user_to_mailing_list
+  after_commit :subscribe_user_to_mailing_list, on: :create
+  after_commit :send_welcome_email_to_user, on: :create
 
-  #def self.new_with_session(params, session)
+      #def self.new_with_session(params, session)
   #  super.tap do |user|
   #    if data = session["devise.facebook_data"] && session["devise
   # .facebook_data"]["extra"]["raw_info"]
@@ -37,7 +37,7 @@ class User < ApplicationRecord
   private
 
   def send_welcome_email_to_user
-    UserMailer.welcome_email(self).deliver_now
+    UserMailer.welcome_email(self).deliver_later
   end
 
   def subscribe_user_to_mailing_list
