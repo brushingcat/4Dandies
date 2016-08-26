@@ -9,6 +9,7 @@ class User < ApplicationRecord
   #       :recoverable, :rememberable, :trackable, :validatable
   devise :database_authenticatable, :registerable, :validatable, :omniauthable, :omniauth_providers => [:facebook, :google_oauth2, :twitter, :instagram]
 
+  after_create :subscribe_user_to_mailing_list
 
   #def self.new_with_session(params, session)
   #  super.tap do |user|
@@ -39,4 +40,7 @@ class User < ApplicationRecord
     UserMailer.welcome_email(self).deliver_now
   end
 
+  def subscribe_user_to_mailing_list
+    SubscribeUserToMailingListJob.perform_later(self)
+  end
 end
