@@ -1,42 +1,89 @@
-<div class="card card-signup">
+<div style="
+    background-color: white;
+">
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-      <%= devise_error_messages! %>
-      <div class="header header-primary text-center">
+  <div style="
+  width: 90%;
+      margin-left: 5%;
+      top: -36px;
+      position: relative;
+      background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 4px 0 rgba(0, 0, 0, 0.30);
+  ">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4" style="
+      text-align: center;
+          color: white;
+          margin-bottom: 10px;
+          margin-top: 21px;
+      ">
         <h4>Sign Up</h4>
-        <div class="social-line">
-          <a href="/users/auth/facebook" class="btn btn-simple btn-just-icon">
-            <i class="fa fa-facebook-square"></i>
-          </a>
-          <a href="/users/auth/twitter" class="btn btn-simple btn-just-icon">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a href="/users/auth/google_oauth2" class="btn btn-simple btn-just-icon">
-            <i class="fa fa-google"></i>
-          </a>
-        </div>
       </div>
-      <p class="text-divider">Or Be Classical</p>
-      <div class="content">
-        <div class="input-group">
-										<span class="input-group-addon">
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2" style="text-align: center; margin-bottom: 40px; ">
+        <a href="/users/auth/facebook" class="col-md-4">
+          <i class="fa fa-facebook-square hvr-grow" style="color: white;"></i>
+        </a>
+        <a href="/users/auth/twitter" class="col-md-4" style="">
+          <i class="fa fa-twitter hvr-grow" style="color: white;"></i>
+        </a>
+        <a href="/users/auth/google_oauth2" class="col-md-4">
+          <i class="fa fa-google hvr-grow" style="color: white;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <p class="text-divider" style="text-align: center;
+      margin-top: -10px;">
+    Or Be Classical
+  </p>
+    </div>
+  <div class="row" style="height: 84px;">
+    <div class="col-sm-1 col-sm-offset-1" style="height: 100%;">
+      <span>
 											<i class="fa fa-user fa-2x"></i>
 										</span>
-          <div class="form-group is-empty">
-            <%= text_field "user", "name", "class" => "form-control", "placeholder" => "#{t('name')}..." %>
-          </div>
-        </div>
-
-        <div class="input-group">
-										<span class="input-group-addon">
-											<i class="fa fa-envelope fa-2x" style="font-size: 22px"></i> <!-- font-size: 22px is necessary because the size of this icon is different and the input fields wouldnt be align-->
+    </div>
+    <div class="col-sm-8" style="margin-top: -50px;">
+      <span class="input input--hoshi">
+          <%= text_field "user", "name", "id" => "input_name", "class" => "input__field input__field--hoshi" %>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Name</span>
+					</label>
+				</span>
+    </div>
+  </div>
+  <div class="row" style="height: 84px;">
+    <div class="col-sm-1 col-sm-offset-1" style="height: 100%;">
+      <span>
+											<i class="fa fa-envelope fa-2x" style="font-size: 31px;"></i>
 										</span>
-          <div class="form-group is-empty">
-            <%= text_field "user", "email", "class" => "form-control", "placeholder" => "Email..." %>
-          </div>
-        </div>
-      </div>
-      <div class="footer text-center">
-        <%= button_tag "Get Started", "name" => "commit", "class" => "btn btn-simple btn-primary btn-lg" %>
-      </div>
+    </div>
+    <div class="col-sm-8" style="margin-top: -50px;">
+      <span class="input input--hoshi">
+          <%= text_field "user", "email", "id" => "input_email", "class" => "input__field input__field--hoshi" %>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Email</span>
+					</label>
+				</span>
+    </div>
+  </div>
+  <div class="row">
+    <%= button_tag "Get Started", "name" => "commit", "style"=>"margin-bottom: 20px; background-color: transparent; border: none; color: purple;",
+                   "class" => "col-sm-4 col-sm-offset-4 hvr-underline-from-left" %>
+  </div>
   <% end %>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $("#input_name").click(function(){
+      $(this).attr("placeholder", "First & Last Name");
+    });
+    $("#input_name").focusout(function(){
+      $(this).attr("placeholder", "");
+    });
+  });
+</script>
