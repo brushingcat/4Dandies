@@ -1,7 +1,8 @@
 class User < ApplicationRecord
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email, presence: true, length: { maximum: 255 },
-            format: { with: VALID_EMAIL_REGEX }
+  after_create :send_welcome_email_to_user
+ # VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+ # validates :email, presence: true, length: { maximum: 255 },
+  #          format: { with: VALID_EMAIL_REGEX }
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   #devise :database_authenticatable, :registerable,
@@ -31,4 +32,11 @@ class User < ApplicationRecord
   def password_required?
     false
   end
+
+  private
+
+  def send_welcome_email_to_user
+    UserMailer.welcome_email(self).deliver_now
+  end
+
 end
