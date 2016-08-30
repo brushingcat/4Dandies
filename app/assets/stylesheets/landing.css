@@ -228,3 +228,40 @@
     -webkit-transform: scale(2.2);
     transform: scale(2.2);
 }
+
+/* Brand Carousel */
+.carousel-demo {
+    align-items:center;
+    width:100%;
+}
+
+.carousel-demo li {
+    background:#ccc;
+    border:1px solid #fff;
+    color:#666;
+    float:left;
+    font-weight:bold;
+    font-size:3em;
+    height:65px;
+    list-style:none;
+    padding:20px 0 0 0;
+    margin:0 20px 0 0;
+    text-align:center;
+    width:18%;
+}
+
+
+.carousel-element {
+    background:#ccc;
+    border:0px solid #fff;
+    color:#666;
+    float:left;
+    font-weight:bold;
+    font-size:3em;
+    height:80px;
+    list-style:none;
+    padding:10px 0 0 0;
+    margin:0 20px 0 0;
+    text-align:center;
+    width:300px;
+}
