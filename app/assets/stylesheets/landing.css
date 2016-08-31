@@ -1,35 +1,38 @@
-.flex-container {
+section.users_grid {
+    width: 100%;
+    min-width: 700px;
     padding: 0;
-    margin: 0;
-    list-style: none;
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
-
-.nowrap  {
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
-
-.flex-item {
-    background: tomato;
-    padding: 5px;
-    width: 76px;
-    height: 76px;
-    margin: 2px;
-    line-height: 100px;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
+    background-color: #111;
+    margin-bottom: -30px;
+    display: block;
+    position: relative;
+    overflow: hidden;
     text-align: center;
-    background-image: url("https://avatars.slack-edge.com/2016-08-17/70213053360_942099ac0a3658a754b0_512.jpg");
-    background-position: center center;
+}
+
+.ul_users_grid
+{
+    width: 100%;
+    padding: 0;
+}
+.ul_users_grid li {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    width: 10%;
+    height: 128px;
+    opacity: 0.5;
+    background-color: #333;
+    background-position: 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background-image: url("https://avatars.slack-edge.com/2016-08-17/70213053360_942099ac0a3658a754b0_512.jpg");
 }
 
 /* Animations for input field on name and email */
