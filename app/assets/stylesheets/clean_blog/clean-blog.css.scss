@@ -46,37 +46,62 @@ hr.small {
   border-width: 4px;
   border-color: white;
 }
-.navbar-custom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+@media(min-width:767px) {
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+  }
 }
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar-custom {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom-style: dashed;
+  max-height: 86px;
+}
+
 .navbar-custom .navbar-brand {
   font-weight: 800;
+  font-size: 21px;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
-  .navbar-custom {
+  /**
+  .navbar-default {
     background: transparent;
     border-bottom: 1px solid transparent;
   }
+  **/
+
   .navbar-custom .navbar-brand {
     color: white;
-    padding: 20px;
+    padding: 10px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
     color: rgba(255, 255, 255, 0.8);
   }
-  .navbar-custom .nav li a {
+  .navbar-custom.nav li a {
     color: white;
     padding: 20px;
   }
@@ -86,7 +111,7 @@ hr.small {
   }
 }
 @media only screen and (min-width: 1170px) {
-  .navbar-custom {
+  .navbar-default {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -102,6 +127,7 @@ hr.small {
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
+    height: 30px;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #f2f2f2;
@@ -111,6 +137,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand {
     color: #404040;
+    font-size: 18px;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
@@ -118,6 +145,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
+    font-size: 10px;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
