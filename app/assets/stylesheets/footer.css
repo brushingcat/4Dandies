@@ -1,0 +1,91 @@
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+footer .title {
+    color: #f4f4f4;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+
+footer .description {
+    color: #c9c9c9;
+    margin: 0px 0px 20px 0px;
+}
+
+footer .help-link {
+    margin-bottom: 10px;
+}
+
+footer .link {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+footer .link {
+    text-transform: uppercase;
+}
+
+
+footer .blog-title {
+    color: #f4f4f4;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+footer .blog-description {
+    color: #c9c9c9;
+    margin-bottom: 10px;
+}
+
+footer .blog-description a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #28c891;
+}
+
+footer .blog-link {
+    display: block;
+    margin-top: 10px;
+    color: #28c891;
+}
+
+footer .blog-img {
+    display: block;
+    width: 95%;
+    max-width: 100px;
+    min-width: 60px;
+    border: 0;
+}
+
+.social-buttons a {
+    margin-left: 15px;
+}
+
+footer .image-wrapper {
+    float: left;
+    margin: 0 3% 0 0;
+}
+
+footer .blog-img {
+    display: block;
+    width: 95%;
+    max-width: 100px;
+    min-width: 60px;
+    border: 0;
+}
+
+footer .description-wrapper {
+    float: left;
+    width: calc(100% - 3% - 100px);
+    color: #f4f4f4;
+}
+
+footer {
+    font-size: 14px !important;
+    font-family: 'Helvetica' !important
+}
