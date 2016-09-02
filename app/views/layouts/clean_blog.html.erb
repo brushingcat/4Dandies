@@ -13,10 +13,9 @@
 <%= yield %>
 
 </body>
-<footer style="background-size: 1720px; background-image: url(<%= asset_path 'clean_blog/footer_castanho-100.png'%>);">
+<footer style="background-image: url(<%= asset_path 'clean_blog/footer_castanho-100.png'%>);">
   <div>
-    <div class="row" style="
-    padding: 40px 30px 40px 30px;margin: 0px 0px 0px 0px;">
+    <div class="row row-info">
       <div class="col-sm-4">
         <section class="footer-section blog">
           <div class="footer-section-wrapper">
@@ -60,28 +59,21 @@
         </section>
       </div>
     </div>
-    <div class="row row-eq-height" style="background-color: black;width: 100%;padding: 0px 30px 0px 30px;margin: 0px 0px 0px 0px;height: 65px;">
-      <div class="col-sm-5" style="
-          margin: auto;">
-        <p style="margin: 23.5px 0;
-            font-size: 12px;
-            color: white;
-            font-family: 'Helvetica Neue',Helvetica, Arial, sans-serif;">
+    <div class="row row-eq-height row-copyright-social">
+      <div class="col-sm-5 copyright">
+        <p>
           @1893-2016 4dandies. All Rights Reserved.
         </p>
       </div>
-      <div class="col-sm-7 social-buttons" style="    float: none;
-          display: table-cell;
-          margin: auto;
-          text-align: right;">
+      <div class="col-sm-7 social-buttons">
         <a href="/users/auth/facebook">
-          <i class="fa fa-facebook-square hvr-grow" style="color: white;"></i>
+          <i class="fa fa-facebook-square hvr-grow" ></i>
         </a>
         <a href="/users/auth/twitter">
-          <i class="fa fa-twitter hvr-grow" style="color: white;"></i>
+          <i class="fa fa-twitter hvr-grow" ></i>
         </a>
         <a href="/users/auth/google_oauth2">
-          <i class="fa fa-google hvr-grow" style="color: white;"></i>
+          <i class="fa fa-google hvr-grow"></i>
         </a>
       </div>
     </div>

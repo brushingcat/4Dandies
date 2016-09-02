@@ -62,10 +62,6 @@ footer .blog-img {
     border: 0;
 }
 
-.social-buttons a {
-    margin-left: 15px;
-}
-
 footer .image-wrapper {
     float: left;
     margin: 0 3% 0 0;
@@ -88,4 +84,47 @@ footer .description-wrapper {
 footer {
     font-size: 14px !important;
     font-family: 'Helvetica' !important
+    background-size: 1720px;
+}
+
+footer .row-info
+{
+    padding: 40px 30px 40px 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+footer .row-copyright-social
+{
+    background-color: black;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+    margin: 0px 0px 0px 0px;
+    height: 65px;
+}
+
+.social-buttons a {
+    margin-left: 15px;
+}
+
+footer div .copyright {
+    margin: auto;
+}
+
+footer div .social-buttons {
+    margin-left: 15px;
+    float: none;
+    display: table-cell;
+    margin: auto;
+    text-align: right;
+}
+
+footer i {
+    color: white;
+}
+
+footer p {
+    margin: 23.5px 0;
+    font-size: 12px;
+    color: white;
+    font-family: 'Helvetica Neue',Helvetica, Arial, sans-serif;
 }
