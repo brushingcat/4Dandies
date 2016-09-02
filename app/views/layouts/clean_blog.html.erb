@@ -12,8 +12,19 @@
 
 <%= yield %>
 
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+      <div style="width: 400px;
+          margin: auto;
+          margin-top: 40%;">
+        <%= render "users/registrations/login_form" %>
+      </div>
+
+  </div>
+</div>
 </body>
-<footer style="background-image: url(<%= asset_path 'clean_blog/footer_castanho-100.png'%>);">
+<footer style="background-image: url(<%= asset_path 'footer.png'%>);">
   <div>
     <div class="row row-info">
       <div class="col-sm-4">
@@ -66,6 +77,13 @@
         </p>
       </div>
       <div class="col-sm-7 social-buttons">
+        <button type="button" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-facebook-square" style="
+          margin-right: 8px;
+              font-size: 15px;
+          "></i>
+          Subscribe
+        </button>
         <a href="/users/auth/facebook">
           <i class="fa fa-facebook-square hvr-grow" ></i>
         </a>
