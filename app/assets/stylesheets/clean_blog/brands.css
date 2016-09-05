@@ -1,0 +1,22 @@
+#brands-grid {
+    text-align: center;
+    margin:auto;
+    line-height: 5em;
+}
+
+#brands-grid ul {
+    list-style-type: none;
+}
+#brands-info{
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.brands-action {
+    text-align: center;
+    padding: 5%;
+}
+
+.brands-action button+ button {
+    margin-left: 25%;
+}
