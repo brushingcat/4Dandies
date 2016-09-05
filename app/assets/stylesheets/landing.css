@@ -42,7 +42,7 @@ section.users_grid {
     z-index: 1;
     display: inline-block;
     margin: 1em;
-    max-width: 350px;
+    max-width: 400px;
     width: calc(100% - 2em);
     vertical-align: top;
 }
@@ -209,6 +209,7 @@ section.users_grid {
         transform: translate3d(0, -40%, 0);
     }
 }
+
 
 /*Submit Button*/
 

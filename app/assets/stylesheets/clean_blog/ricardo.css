@@ -1,0 +1,62 @@
+.section {
+    text-align: justify;
+    display: flex;
+    height: 49vh;
+}
+
+#left {
+    background-color: #f7f7f7;
+    padding: 0px 7% 0px 0px;
+}
+
+#right {
+    background-color: #f2f2f2;
+    padding: 0px 0px 0px 7%;
+}
+
+.section .container-fluid {
+    align-self: center;
+}
+
+#info {
+    align-self: center;
+}
+
+.action {
+    text-align: center;
+    padding: 5%;
+}
+
+.section #img {
+    height: 45vh;
+    background-size: cover;
+}
+.blog #img{
+    background-image: url(http://i.imgur.com/n2BUnUe.jpg);
+}
+.aboutus #img{
+    background-image: url(http://i.imgur.com/n2BUnUe.jpg);
+}
+.wwwant #img{
+    background-image: url(http://i.imgur.com/n2BUnUe.jpg);
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.brands #grid {
+    align-self: center;
+    line-height: 5em;
+}
+
+.brands #grid ul {
+    list-style-type: none;
+}
+
+.action button+ button {
+    margin-left: 50px;
+}

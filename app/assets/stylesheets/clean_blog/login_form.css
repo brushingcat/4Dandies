@@ -1,0 +1,68 @@
+
+/**
+
+login_div
+
+        ##################
+        #    sign_up     #
+   ###### login_top_div  ######
+   #    # social_buttons #    #
+   #    ##################    #
+   #                          #
+   #       text_divider       #
+   #                          #
+   #              input       #
+   #                          #
+   #     login_bottom_div     #
+   #                          #
+   #              input       #
+   #                          #
+   #                          #
+   #                          #
+   ############################
+
+**/
+.login_div {
+    background-color: white;
+    width: 440px;
+    margin-left: -200px;
+    top: 5vh;
+    position: absolute;
+    display: inline-block;
+}
+
+.login_top_div {
+    width: 90%;
+    margin-left: 5%;
+    top: -36px;
+    position: relative;
+    background-color: #666666;
+    background-position: 50% 50%;
+    background-size: 1240px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 4px 0 rgba(0, 0, 0, 0.30);
+}
+
+.login_top_div .sign_up {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 21px;
+}
+
+.login_top_div .social_buttons {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.login_top_div .social_buttons .button {
+    color: white;
+}
+
+.text_divider {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.login_bottom_div .input {
+    margin-top: -50px;
+}
