@@ -18,7 +18,7 @@ Rails.application.configure do
 
     config.cache_store = :memory_store
     config.public_file_server.headers = {
-      'Cache-Control' => 'public, max-age=172800'
+        'Cache-Control' => 'public, max-age=172800'
     }
   else
     config.action_controller.perform_caching = false
@@ -28,8 +28,23 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.delivery_method = :test
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+
+
+  #config.action_mailer.smtp_settings = {
+  #    address: ENV['SMTP_ADDRESS'],
+  #    port: ENV['SMTP_PORT'],
+  #    domain: ENV['SMTP_DOMAIN'],
+  #    user_name: ENV['SMTP_USERNAME'],
+  #    password: ENV['SMTP_PASSWORD'],
+  #    :authentication => :login,
+  #    :enable_starttls_auto => true,
+  #    :ssl => true,
+  #    :tls => true
+  #}
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
