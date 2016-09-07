@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Blog</title>
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
 <div class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog">
 
-      <div style="width: 400px;
-          margin: auto;
-          margin-top: 40%;">
-        <%= render "users/registrations/login_form" %>
-      </div>
+    <div style="width: 400px;
+        margin: auto;
+        margin-top: 40%;">
+      <%= render "users/registrations/login_form" %>
+    </div>
 
   </div>
 </div>
@@ -39,9 +25,9 @@
                 clothing. With Equateur, we tell the stories of the humans who wear
                 it.
                 <nav class="cl-effect-4" id="cl-effect-4">
-                <a class="blog-link" href="http://equateur.bonobos.com/" rel="noopener" target="_blank">Read
-                the latest post</a>
-              </nav>
+                  <a class="blog-link" href="http://equateur.bonobos.com/" rel="noopener" target="_blank">Read
+                    the latest post</a>
+                </nav>
               </div>
             </div>
           </div>
@@ -100,4 +86,3 @@
   </div>
 
 </footer>
-</html>
