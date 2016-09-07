@@ -34,7 +34,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#arrow").click(function () {
         $('html, body').animate({
-            scrollTop: $("#about").offset().top
+            scrollTop: $("#left").offset().top
         }, 1000);
     });
 });
