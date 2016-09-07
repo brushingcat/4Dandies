@@ -71,4 +71,4 @@ gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-
 gem 'gibbon'
 gem 'sidekiq'
 gem 'bootstrap-sass', '3.3.7'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.6.2'
