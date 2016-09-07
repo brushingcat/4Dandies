@@ -288,3 +288,27 @@ body{
     font-size: 5vh;
     width: 300px;
 }
+
+/*Buttons*/
+
+.section button {
+    background: #f45b69 ;
+    color: #f2f2f2 ;
+    font-family: Quicksand;
+    font-size: 20px;
+    height: 45px;
+    width: 150px;
+    line-height: 45px;
+    margin: 25px 25px;
+    text-align: center;
+    border: 0;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    border-radius: 0;
+    padding: 0;
+}
+
+.section button:hover {
+    opacity: 0.75;
+    background: #57a586 ;
+}
