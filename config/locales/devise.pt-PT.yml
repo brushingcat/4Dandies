@@ -47,7 +47,7 @@
       send_paranoid_instructions: 'Se a sua conta existir, irá receber dentro de alguns minutos um e-mail com instruções para a desbloquear.'
     omniauth_callbacks:
       success: 'Autenticado com sucesso a partir da conta %{kind}.'
-      failure: 'Não foi possível autenticá-lo a partir da conta %{kind} porque "%{reason}".'
+      failure: 'Autenticação falhou.'
     mailer:
       confirmation_instructions:
         subject: 'Instruções de confirmação'

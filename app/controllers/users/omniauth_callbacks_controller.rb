@@ -37,5 +37,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def failure
     redirect_to root_path
+    set_flash_message(:alert, :failure ,:kind => env['omniauth.params'], :reason =>"invalid information") if
+        is_navigational_format?
   end
 end
