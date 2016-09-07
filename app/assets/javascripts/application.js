@@ -16,10 +16,16 @@
 //= require_tree .
 
 
-$(window).scroll(function() {
+//Nav animation
+$(window).scroll(function () {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+});
+
+//Carousel animation
+$(document).ready(function () {
+    $('#carousel-demo1').scrollingCarousel();
 });
