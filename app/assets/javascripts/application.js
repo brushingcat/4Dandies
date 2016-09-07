@@ -29,3 +29,12 @@ $(window).scroll(function () {
 $(document).ready(function () {
     $('#carousel-demo1').scrollingCarousel();
 });
+
+//scroll animation
+$(document).ready(function () {
+    $("#arrow").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, 1000);
+    });
+});
