@@ -103,7 +103,7 @@ footer .row-copyright-social
     height: 65px;
 }
 
-.social-buttons a {
+.social-buttons i + i{
     margin-left: 15px;
 }
 
