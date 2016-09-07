@@ -1,0 +1,51 @@
+
+<% flash.each do |key, value| %>
+
+    <% if key == "notice" %>
+        <%= javascript_include_tag "notificationFx", "data-turbolinks-track" => true  %>
+        <script>
+          $(document).ready(function(){(function() {
+            setTimeout( function() {
+              // create the notification
+              var notification = new NotificationFx({
+                message : '<div class="ns-thumb"><img src="https://avatars.slack-edge.com/2016-08-17/70213053360_942099ac0a3658a754b0_512.jpg" height="64" width="64"/></div><div class="ns-content"><p> <%= value %></p></div>',
+                layout : 'other',
+                ttl : 6000,
+                effect : 'thumbslider',
+                type : 'notice', // notice, warning, error or success
+                onClose : function() {
+                }
+              });
+
+              // show the notification
+              notification.show();
+
+            }, 1200 );
+          })();
+          });
+        </script>
+    <% else %>
+        <%= javascript_include_tag "notificationFx", "data-turbolinks-track" => true  %>
+        <script>
+          $(document).ready(function(){(function() {
+            setTimeout( function() {
+              // create the notification
+              var notification = new NotificationFx({
+                message : '<div class="ns-thumb"><img src="http://findicons.com/files/icons/42/basic/64/warning.png" height="64" width="64"/></div><div class="ns-content"><p> <%= value %></p></div>',
+                layout : 'other',
+                ttl : 6000,
+                effect : 'thumbslider',
+                type : 'notice', // notice, warning, error or success
+                onClose : function() {
+                }
+              });
+
+              // show the notification
+              notification.show();
+
+            }, 1200 );
+          })();
+          });
+        </script>
+    <% end %>
+<% end %>
