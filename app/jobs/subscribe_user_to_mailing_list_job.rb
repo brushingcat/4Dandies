@@ -7,6 +7,6 @@ class SubscribeUserToMailingListJob < ApplicationJob
     gibbon.lists(ENV["MAILCHIMP_LIST_ID"]).members(hash).upsert(body:
                                                               {email_address:
                                                                    user.email,
-                                                status: "subscribed"})
+                                                status: "subscribed",merge_fields: {NAME: user.name}})
   end
 end

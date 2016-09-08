@@ -21,7 +21,7 @@
 }
 
 #right {
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     padding: 0px 0px 0px 7%;
 }
 
@@ -34,9 +34,11 @@
 }
 
 .action {
-    text-align: center;
-    padding: 5%;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 5% 0;
 }
+
 
 .section #img {
     margin-top: 20px;
@@ -65,14 +67,41 @@
 }
 
 .brands #grid {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px 7% 0px 0px;
     align-self: center;
     line-height: 5em;
 }
 
 .brands #grid ul {
+    text-align: center;
+    padding: 0px;
     list-style-type: none;
 }
 
-.action button + button {
-    margin-left: 50px;
+.brands #grid .action {
+    padding-top: 0;
+}
+
+
+
+
+/*Buttons*/
+
+.section .action .link{
+    font-weight: 700;
+    font-family: Quicksand;
+    font-size: 20px;
+    color: #050505!important;
+    text-decoration: none !important;
+}
+
+.section .action .link:hover{
+    color: white !important;
+    background-color: #050505;
+}
+
+.section .action .link span{
+    font-size: 15px;
 }
