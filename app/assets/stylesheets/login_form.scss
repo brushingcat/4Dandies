@@ -69,9 +69,16 @@ login_div
     color: white;
 }
 
+.row_text_divider {
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
 .text_divider {
-    text-align: center;
-    margin-top: -22px;
+  text-align: center;
+  margin-top: -10px;
+  width: 100%;
+  position: absolute;
 }
 
 .login_bottom_div .input {
@@ -83,5 +90,4 @@ login_div
     background-color: transparent;
     border: none;
     color: black;
-    width: inherit;
 }

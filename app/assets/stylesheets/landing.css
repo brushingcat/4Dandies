@@ -45,6 +45,7 @@ section.users_grid {
     max-width: 270px;
     width: calc(100% - 2em);
     vertical-align: top;
+    margin-left: 35px;
 }
 
 .input__field {
