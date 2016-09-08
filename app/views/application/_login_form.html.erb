@@ -20,19 +20,17 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row row_text_divider">
   <p class="text_divider">
     Or Be Classical
   </p>
     </div>
   <div class="row">
-    <div class="col-sm-1 col-sm-offset-1" style="height: 100%;">
-      <span>
-											<i class="fa fa-user fa-2x"></i>
+    <div class="col-sm-12 login_bottom_div input">
+	<span style="float: left;">
+											<i style="margin-bottom: 4px;" class="fa fa-user fa-2x"></i>
 										</span>
-    </div>
-    <div class="col-sm-8 login_bottom_div input">
-      <span class="input input--hoshi">
+      <span style="float: left; margin-left: 64px; " class="input input--hoshi">
           <%= text_field "user", "name", "id" => "input_name", "class" => "input__field input__field--hoshi" %>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
 						<span class="input__label-content input__label-content--hoshi">Name</span>
@@ -41,16 +39,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-1 col-sm-offset-1">
-      <span>
-        <!--Font-size is necessary to keep this icon the same size of others-->
-        <i class="fa fa-envelope fa-2x" style="font-size: 31px;"></i>
+    <div class="col-sm-12 login_bottom_div input">
+	<span style="float: left;">
+											<i style="font-size: 22px; margin-bottom: 4px;" class="fa fa-envelope fa-2x"></i>
 										</span>
-    </div>
-    <div class="col-sm-8 login_bottom_div input">
-      <span class="input input--hoshi">
-          <%= text_field "user", "email", "id" => "input_email", "class" => "input__field input__field--hoshi" %>
-					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+      <span style="float: left; margin-left: 64px;" class="input input--hoshi">
+         <%= text_field "user", "email", "id" => "input_email", "class" => "input__field input__field--hoshi" %>
+        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
 						<span class="input__label-content input__label-content--hoshi">Email</span>
 					</label>
 				</span>
