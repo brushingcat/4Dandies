@@ -1,0 +1,69 @@
+.subscribe {
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #050505;
+}
+
+.subscribe .container {
+    width: 300px;
+    padding: 0px;
+}
+
+.subscribe .top {
+    position: relative;
+    margin: 0px 25px;
+    padding: 15px 0px;
+    color: white;
+    background-color: #050505;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 4px 0 rgba(0, 0, 0, 0.30);
+}
+
+.subscribe .top i {
+    padding-top: 5px;
+    color: white;
+}
+
+.subscribe .bottom {
+    margin-top: -25px;
+    background-color: white;
+    padding: 35px 0px 5px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 4px 0 rgba(0, 0, 0, 0.30);
+}
+
+.subscribe .bottom .row {
+    margin: 10px 5px;
+}
+
+.subscribe .bottom i {
+    width: 20px;
+}
+
+.subscribe .bottom .name,
+.email {
+    padding: 0px 20px;
+    text-align: left;
+}
+
+.subscribe .bottom .subinput {
+    padding: 0.8em;
+    width: 225px;
+    border: none;
+    border-bottom: solid 1px #050505;
+}
+
+.subscribe .bottom .subinput:focus {
+    outline: none;
+}
+
+.subscribe .bottom .start .link{
+    font-size: 18px;
+    color: #050505!important;
+    text-decoration: none !important;
+}
+
+.subscribe .bottom .start .link:hover{
+    color: white !important;
+    background-color: #050505!important;
+}
