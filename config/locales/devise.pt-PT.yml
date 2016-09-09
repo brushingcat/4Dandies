@@ -2,6 +2,7 @@
 
 "pt-PT":
   errors:
+    format: "%{message}"
     messages:
       expired: "expirou, por favor solicite uma nova"
       not_found: "não foi encontrado"
@@ -10,6 +11,8 @@
       not_saved:
         one: "1 erro impediu %{resource} de ser gravado:"
         other: "%{count} erros impediram %{resource} de ser gravado:"
+      invalid: "Email inválido."
+      taken: "Email já se encontra registado."
 
   devise:
     failure:
