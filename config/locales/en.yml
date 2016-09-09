@@ -20,6 +20,25 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello_world: "Hello world"
-  hello_flash: "hello flash"
   name: "Name"
+  landing:
+    titles:
+      follow_us: "Segue-nos"
+      about_us: "About Us"
+      team: "The Team"
+      blog: "Blog"
+      brands: "Brands"
+    texts:
+      about_us: ""
+      team: ""
+      blog: ""
+      brands: ""
+    buttons:
+      visit: "Visit"
+      contact: "Contact"
+      see_more: "See More"
+    footer:
+      help: "Help"
+      privacy_policy: "Privacy Policy"
+      email_us: "Email Us"
+      terms:  "Terms"

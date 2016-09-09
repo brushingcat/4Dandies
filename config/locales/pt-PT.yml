@@ -1,4 +1,23 @@
 pt-PT:
-  hello_world: "Olá Mundo"
-  hello_flash: "olá flash"
   name: "Nome"
+  landing:
+    titles:
+      follow_us: "Segue-nos"
+      about_us: "Sobre Nós"
+      team: "A Equipa"
+      blog: "Blog"
+      brands: "Marcas"
+    texts:
+      about_us: ""
+      team: ""
+      blog: ""
+      brands: ""
+    buttons:
+      visit: "Visitar"
+      contact: "Contactar"
+      see_more: "Ver mais"
+    footer:
+      help: "Ajuda"
+      privacy_policy: "Política de Privacidade"
+      email_us: "Fala Connosco"
+      terms:  "Termos"
