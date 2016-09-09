@@ -49,8 +49,8 @@
       unlocked: 'A sua conta foi desbloqueada com sucesso. Agora está autenticado.'
       send_paranoid_instructions: 'Se a sua conta existir, irá receber dentro de alguns minutos um e-mail com instruções para a desbloquear.'
     omniauth_callbacks:
-      success: 'Autenticado com sucesso a partir da conta %{kind}.'
-      failure: 'Autenticação falhou.'
+      success: 'Subscrito com sucesso.'
+      failure: 'Subscrição Falhada.'
     mailer:
       confirmation_instructions:
         subject: 'Instruções de confirmação'
