@@ -1,10 +1,16 @@
 <%= render 'header' %>
 <%= render 'carousel' %>
-
 <%= render 'layouts/messages' %>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <%= render "users/shared/subscribe" %>
+  </div>
+
+</div>
+</div>
 <%= render 'about' %>
 <%= render 'blog' %>
 <%= render 'brands' %>
-<%= render 'login_slider' %>
-<%= render 'usergrid' %>
+<%= render 'users/shared/usergrid' %>
 

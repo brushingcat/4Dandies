@@ -1,5 +1,4 @@
 .subscribe {
-
     text-align: center;
     display: flex;
     align-items: center;
@@ -50,11 +49,12 @@
     padding: 0.8em;
     width: 225px;
     border: none;
-    border-bottom: solid 1px #050505;
+    border-bottom: solid 1px #C7C7CD;
 }
 
 .subscribe .bottom .subinput:focus {
     outline: none;
+    border-bottom: solid 1px #050505;
 }
 
 .subscribe .bottom .start .link{
