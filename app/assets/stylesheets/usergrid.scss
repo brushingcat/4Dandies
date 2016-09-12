@@ -18,10 +18,15 @@
   float: left;
   height: 100px;
   width: 100px;
-  background-image: url("https://scontent-lhr3-1.cdninstagram.com/t51.2885-19/s150x150/13734304_288676411495256_393627284_a.jpg");
+  /*background-image: url("https://scontent-lhr3-1.cdninstagram.com/t51.2885-19/s150x150/13734304_288676411495256_393627284_a.jpg");*/
   background-size: cover;
   list-style: none;
   margin: 0px 1px 1px 0px;
+}
+
+.usergrid li img{
+  height: inherit;
+  width: inherit;
 }
 
 .usergrid .hover {

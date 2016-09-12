@@ -262,7 +262,7 @@ Devise.setup do |config|
                   ENV['INSTAGRAM_APP_SECRET']
 
   config.omniauth :twitter, ENV['TWITTER_APP_ID'], ENV['TWITTER_APP_SECRET'],
-                  :image_size => 'original'
+                  :image_size => 'bigger'
 
 
   # ==> Warden configuration

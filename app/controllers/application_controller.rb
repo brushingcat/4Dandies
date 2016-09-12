@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
+    @users = User.where.not(:image_url => nil).shuffle.take(100)
     #flash[:notice] = t(:hello_flash)
   end
 
