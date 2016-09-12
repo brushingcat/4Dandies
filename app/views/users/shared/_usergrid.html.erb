@@ -1,13 +1,15 @@
 <div class="usergrid">
   <ul>
-    <% @users.each do |user| %>
-        <li id="user-<%= user.id %>">
-          <% if !user.image_url.nil? %>
-              <%= image_tag user.image_url %>
-          <% end %>
-        </li>
+    <% unless @users.nil? %>
+        <% @users.each do |user| %>
+            <li id="user-<%= user.id %>">
+              <% if !user.image_url.nil? %>
+                  <%= image_tag user.image_url %>
+              <% end %>
+            </li>
+        <% end %>
     <% end %>
-  </ul>
+       </ul>
   <div class="filter hover"></div>
-  <%= render "users/shared/subscribe" %>
+       <%= render "users/shared/subscribe" %>
 </div>
