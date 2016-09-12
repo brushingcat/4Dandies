@@ -73,3 +73,9 @@ gem 'gibbon'
 gem 'sidekiq'
 gem 'bootstrap-sass', '3.3.7'
 gem 'font-awesome-sass', '~> 4.6.2'
+
+gem "jekyll", "3.2.1"
+
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+end
