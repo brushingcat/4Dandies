@@ -3,9 +3,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
 # before_action :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
-  # def new
-  #   super
-  # end
+  def new
+    @users = User.where.not(:image_url => nil).shuffle.take(200)
+     super
+  end
 
   # POST /resource
   # def create

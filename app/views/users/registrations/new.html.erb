@@ -1,73 +1,10 @@
 <%= javascript_include_tag "notificationFx", "data-turbolinks-track" => true  %>
 <%= devise_error_messages! %>
 
-<div style="    width: 100%;
-    height: 640px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;">
-
-  <section class="users_grid">
-    <ul class="ul_users_grid">
-
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-    </ul>
-  </section>
-
-  <div style="width: 400px;
-           margin-left: -200px;
-           top: 20%;
-           position: absolute;
-           display: inline-block;">
-    <%= render "login_form" %>
+<div id="full" style="width: 100%;
+    overflow: hidden;">
+  <div class="row" style="text-align: center;margin-top: 100px">
+  <h1>Join our community</h1>
   </div>
+  <%= render '/users/shared/usergrid' %>
 </div>

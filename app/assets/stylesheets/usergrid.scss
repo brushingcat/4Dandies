@@ -8,6 +8,11 @@
   border-bottom: solid 1px white;
 }
 
+#full .usergrid{
+  margin: 100px 0px;
+  height: 605px;
+}
+
 .usergrid ul {
   width: calc(100% + 99px);
   padding: 0;
@@ -15,6 +20,7 @@
 }
 
 .usergrid li {
+  overflow: hidden;
   float: left;
   height: 100px;
   width: 100px;
@@ -27,6 +33,7 @@
 .usergrid li img{
   height: inherit;
   width: inherit;
+  object-fit: cover
 }
 
 .usergrid .hover {
@@ -37,8 +44,9 @@
 }
 
 .usergrid .filter {
-  background-color: #f2f2f2;
-  opacity: 0.5;
+ /* background-color: #f2f2f2;*/
+  background-color: #2b2b2b;
+  opacity: 0.3;
  /* background-color: #050505;
   opacity: 0.2;*/
 }
