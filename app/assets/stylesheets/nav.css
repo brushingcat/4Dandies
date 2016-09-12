@@ -45,16 +45,12 @@
 }
 
 .navbar-default .navbar-toggle{
-    border-color: #050505
+    border-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar{
     background-color: #050505;
-    height: 1px;
-}
 
-.navbar-default .navbar-toggle .icon-bar + .icon-bar{
-    margin-top: 5px;
 }
 
 .navbar-default .navbar-collapse{
