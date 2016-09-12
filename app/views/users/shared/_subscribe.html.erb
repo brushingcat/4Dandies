@@ -4,13 +4,13 @@
       <div class="row">
         <h4>Subscribe</h4></div>
       <div class="row">
-        <a href="/users/auth/facebook" class="col-md-4">
+        <a href="<%= user_facebook_omniauth_authorize_path%>" class="col-md-4">
           <i class="fa fa-facebook-square hvr-grow button"></i>
         </a>
-        <a href="/users/auth/twitter" class="col-md-4" style="">
+        <a href="<%= user_twitter_omniauth_authorize_path%>" class="col-md-4">
           <i class="fa fa-twitter hvr-grow button"></i>
         </a>
-        <a href="/users/auth/google_oauth2" class="col-md-4">
+        <a href="<%= user_google_oauth2_omniauth_authorize_path%>" class="col-md-4">
           <i class="fa fa-google hvr-grow button"></i>
         </a>
       </div>
@@ -21,15 +21,15 @@
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <div class="row name">
         <i class="fa fa-user"></i>
-        <%= text_field "user", "name", "id" => "input_name", "class" => "subinput" %>
+        <%= f.text_field :name , :class => 'subinput', :placeholder => 'Name'%>
         </label>
       </div>
       <div class="row email">
         <i class="fa fa-envelope"></i>
-        <%= text_field "user", "email", "id" => "input_email", "class" => "subinput" %>
+        <%= f.text_field :email , :class => 'subinput', :placeholder => 'Email' %>
       </div>
       <div class="row start">
-        <%= button_tag "Get Started", "name" => "commit", "class" => "link" %>
+        <%= f.submit 'Get Started', :class => 'link' %>
       </div>
       <% end %>
     </div>
