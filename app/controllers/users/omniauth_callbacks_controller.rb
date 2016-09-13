@@ -27,7 +27,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       set_flash_message(:notice, :success, :kind => "#{provider}") if
           is_navigational_format?
     else
-      redirect_to root_path
+      redirect_to new_user_registration_path
       set_flash_message(:alert, :failure ,:kind => "#{provider}", :reason =>"invalid information") if
           is_navigational_format?
       #session["devise.data"] = request.env["omniauth.auth"]
