@@ -36,7 +36,11 @@
 }
 
 .navbar-default .nav li:hover{
-    background-color: #f2f2f2;
+    background-color: #050505!important;
+}
+
+.navbar-default .nav li:hover a{
+    color: white !important;
 }
 
 .navbar-default .container{
