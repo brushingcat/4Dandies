@@ -28,7 +28,10 @@ $(window).scroll(function () {
 
 //Carousel animation
 $(document).ready(function () {
-    $('#carousel-demo1').scrollingCarousel();
+    $('#carousel-demo1').scrollingCarousel( {
+        autoScroll: true,
+        autoScrollSpeed: '20000'
+    });
 });
 
 //scroll animation
