@@ -59,6 +59,7 @@
 }
 .navbar-default .navbar-collapse ul{
     float: right;
+    margin: 7.5px -15px !important;
 }
 
 .navbar-default .navbar-collapse li{
@@ -70,3 +71,5 @@
     text-align: right;
     padding: 0px;
 }
+
+
