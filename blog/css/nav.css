@@ -35,11 +35,11 @@
     color: #050505;
 }
 
-.navbar-default .nav li:hover{
+.navbar-default .nav li.other_buttons:hover{
     background-color: #050505!important;
 }
 
-.navbar-default .nav li:hover a{
+.navbar-default .nav li.other_buttons:hover a{
     color: white !important;
 }
 
@@ -76,4 +76,21 @@
     padding: 0px;
 }
 
+.nav li.subscribe-button {
+    height: 40px;
+}
+
+
+.nav li.subscribe-button a {
+    color: #ff3366;
+    border: solid 1px #ff3366;
+    border-radius: 3px;
+    padding: 8px;
+    margin-top: -8px;
+    margin-left: 15px;
+}
+.nav li.subscribe-button a:hover {
+    color: #fff;
+    background: #f42156;
+}
 
