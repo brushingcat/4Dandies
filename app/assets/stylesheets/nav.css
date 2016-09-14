@@ -43,6 +43,24 @@
     color: white !important;
 }
 
+.navbar-default .nav li.subscribe-button{
+    border: solid 1px #28c891;
+    border-radius: 3px;
+}
+
+.navbar-default .nav li.subscribe-button a{
+    color: #28c891;
+}
+
+.navbar-default .nav li.subscribe-button:hover {
+    background-color: #28c891;
+}
+
+.navbar-default .nav li.subscribe-button:hover a{
+    color: #FFFFFF;
+}
+
+
 .navbar-default .container{
     width: inherit;
     margin:0 10%;
@@ -76,6 +94,7 @@
     padding: 0px;
 }
 
+<<<<<<< HEAD
 .nav li.subscribe-button {
     height: 40px;
 }
@@ -93,3 +112,5 @@
     background: #f42156;
 }
 
+=======
+>>>>>>> visual_changes
