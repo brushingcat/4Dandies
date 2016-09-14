@@ -27,3 +27,5 @@ coverage/
 #ignore Gemfile.lock
 Gemfile.lock
 
+public/blog/feed.xml
+
