@@ -43,6 +43,24 @@
     color: white !important;
 }
 
+.navbar-default .nav li.subscribe-button{
+    border: solid 1px #28c891;
+    border-radius: 3px;
+}
+
+.navbar-default .nav li.subscribe-button a{
+    color: #28c891;
+}
+
+.navbar-default .nav li.subscribe-button:hover {
+    background-color: #28c891;
+}
+
+.navbar-default .nav li.subscribe-button:hover a{
+    color: #FFFFFF;
+}
+
+
 .navbar-default .container{
     width: inherit;
     margin:0 10%;
@@ -75,22 +93,3 @@
     text-align: right;
     padding: 0px;
 }
-
-.nav li.subscribe-button {
-    height: 40px;
-}
-
-
-.nav li.subscribe-button a {
-    color: #ff3366;
-    border: solid 1px #ff3366;
-    border-radius: 3px;
-    padding: 8px;
-    margin-top: -8px;
-    margin-left: 15px;
-}
-.nav li.subscribe-button a:hover {
-    color: #fff;
-    background: #f42156;
-}
-
