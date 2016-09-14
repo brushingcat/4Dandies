@@ -70,3 +70,19 @@
     color: white !important;
     background-color: #050505!important;
 }
+
+.error_message {
+    margin: 15px 0px;
+    width: 50vh;
+    display: inline-block;
+    text-align: initial;
+    border-radius: 3px;
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.error_message i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}

@@ -4,6 +4,12 @@
     overflow: hidden;">
   <div class="row" style="text-align: center;margin-top: 100px">
   <h1>Join our community</h1>
+    <% flash.each do |key, value| %>
+        <div class="error_message">
+          <i class="fa fa-times-circle"></i>
+            <%= value %>
+        </div>
+    <% end %>
   </div>
   <%= render '/users/shared/usergrid' %>
 </div>
