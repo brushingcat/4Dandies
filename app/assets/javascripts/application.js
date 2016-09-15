@@ -17,28 +17,30 @@
 //= require_tree .
 
 
-//Nav animation
-$(window).scroll(function () {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
-
 //Carousel animation
 $(document).ready(function () {
+
+    //Nav animation
+    $(window).scroll(function () {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+
     $('#carousel-demo1').scrollingCarousel( {
         autoScroll: true,
         autoScrollSpeed: '20000'
     });
-});
 
-//scroll animation
-$(document).ready(function () {
-    $("#arrow").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#left").offset().top
-        }, 1000);
+    //scroll animation
+    $(document).ready(function () {
+        $("#arrow").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#left").offset().top
+            }, 1000);
+        });
     });
 });
+
