@@ -14,6 +14,14 @@
         ga('create', 'UA-84209557-1', 'auto');
         ga('send', 'pageview');
 
+        //Nav animation
+        $(window).scroll(function () {
+            if ($(".navbar").offset().top > 50) {
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+            } else {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            }
+        });
     </script>
 </body>
 {% include footer.html %}
