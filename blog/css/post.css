@@ -6,6 +6,11 @@ body {
     text-align: justify;
 }
 
+.social_buttons {
+    position: relative;
+    top: 0px;
+}
+
 .header {
     height: 400px;
     background-image: url(images/new.jpg);
@@ -38,9 +43,13 @@ body {
 .post_body .post_author, .post_share {
 }
 
+.post_author{
+    margin-right: 20px;
+}
+
 .post_body .avatar {
     text-align: -webkit-center;
-    margin-top: 10%;
+    padding-top: 10px;
 }
 
 .post_body .post_content {

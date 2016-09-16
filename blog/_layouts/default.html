@@ -22,6 +22,87 @@
                 $(".navbar-fixed-top").removeClass("top-nav-collapse");
             }
         });
+
+        $(function() {
+            var dist_top_changed=2000;
+
+            $(window).resize(
+                    function ()
+                    {
+                        dist_top_changed=2000;
+
+                        var elementOffset = $('#social_buttons').offset().top;
+
+                        $('#social_buttons').css({
+                            top: '0px',
+                            position: 'relative',
+                            left: '0px'
+                        });
+                        $('#author').css({
+                            top: '0px',
+                            position: 'relative',
+                            left: '0px'
+                        });
+
+                        if(elementOffset < dist_top_changed) {
+                            dist_top_changed = elementOffset;
+                            $('#social_buttons').css({
+                                position: 'fixed',
+                                top: '400px',
+                                left: $('#social_buttons').offset().left
+                            });
+                            $('#author').css({
+                                position: 'fixed',
+                                top: '400px',
+                                left: $('#author').offset().left
+                            });
+                        }
+
+
+                    }
+            );
+
+            $(window).scroll(function() {
+
+                var scrollTop     = $(window).scrollTop(),
+                        elementOffset = $('#social_buttons').offset().top,
+                        distance      = (elementOffset - scrollTop);
+
+                if (distance < 400) {
+                    console.log("1");
+                    dist_top_changed = elementOffset;
+                    $('#social_buttons').css({
+                        position: 'fixed',
+                        top: '400px',
+                        left: $('#social_buttons').offset().left
+                    });
+                    $('#author').css({
+                        position: 'fixed',
+                        top: '400px',
+                        left: $('#author').offset().left
+                    });
+
+                } else {
+                    console.log("2");
+                    if(elementOffset < dist_top_changed) {
+                        console.log("3");
+                        $('#social_buttons').css({
+                            top: '0px',
+                            position: 'relative',
+                            left: '0px'
+                        });
+                        $('#author').css({
+                            top: '0px',
+                            position: 'relative',
+                            left: '0px'
+                        });
+                    }
+                }
+
+
+
+            });
+        });
     </script>
 </body>
 {% include footer.html %}

@@ -22,16 +22,16 @@ subscribe via RSSv class="row">
     <div class="container">
         <div class="row row-eq-height">
             <div class="col-sm-2 post_author">
-                <div class="col-sm-12 avatar">
-                    <img class="img-responsive" style="center" src="{{ '/img/logo_bruna.jpg' | prepend: site.baseurl }} ">
-                    <p>Bruna Magalhães</p>
+                <div id="author" class="col-sm-12 avatar">
+                    <img class="" style="max-width: 110px; height: auto;" src="{{ '/img/logo_bruna.jpg' | prepend: site.baseurl }} ">
+                    <p style="width: 110px">Bruna Magalhães</p>
                 </div>
             </div>
             <div class="col-sm-8 post_content">
               {{ content }}
             </div>
             <div class="col-sm-2 post_share">
-                <ul>
+                <ul id="social_buttons" class="social_buttons">
                     <i class="fa fa-facebook hvr-grow"></i>
                     <i class="fa fa-pinterest hvr-grow"></i>
                     <i class="fa fa-twitter hvr-grow"></i>
@@ -41,5 +41,3 @@ subscribe via RSSv class="row">
         </div>
     </div>
 </div>
-
-<%= render ''>
