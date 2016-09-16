@@ -11,13 +11,11 @@
         <section class="footer-section blog">
           <div class="footer-section-wrapper">
             <div class="image-wrapper">
-              <img alt="Equateur Logo" class="blog-img" src="https://da7alfkd8qg77.cloudfront.net/assets/v2/footer/equateur-9f60606662b1ec99a9e15ba07d21ed4b08aee7dc456324f6946848c7d528ebff.png">
+              <img alt="Blog Logo" class="blog-img" src="<%= asset_path 'blog_logo.png' %>">
             </div>
             <div class="description-wrapper">
               <div class="blog-title">4u</div>
-              <div class="blog-description">At Bonobos, we strive to make great
-                clothing. With Equateur, we tell the stories of the humans who wear
-                it.
+              <div class="blog-description">4mens 4womens 4dandies
                 <nav class="cl-effect-4" id="cl-effect-4">
                   <a class="blog-link" href="<%= blog_path %>">Read
                     the latest post</a>
@@ -38,7 +36,7 @@
         </div>
         <div class="col-sm-6 col-xs-12">
           <div class="help-link six">
-            <a class="link" href="/contact-us"><%= t('landing.footer.email_us') %></a>
+            <a class="link" href="mailto:social@4dandies.com" target="_top"><%= t('landing.footer.email_us') %></a>
           </div>
           <div class="help-link six">
             <a class="link" href="/terms"><%= t('landing.footer.terms') %></a>

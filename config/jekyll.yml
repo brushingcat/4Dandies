@@ -16,3 +16,7 @@ paginate: 6
 permalink: pretty
 gems:
 - jekyll-paginate
+
+collections:
+ brands:
+  output: true
