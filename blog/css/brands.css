@@ -282,6 +282,17 @@
 	padding-left: 0;
 	display: inline-block;
 }
+
+.soc i {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin-top: 10px;
+	margin-left: 0px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
 .soc1 a{
 	display: inline-block;
 	height: 17px;
