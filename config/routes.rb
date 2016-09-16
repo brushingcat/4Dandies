@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     post "/subscribe" => "users/registrations#create", :as => :user_registration
   end
 
-
+  get '/blog', to: redirect('/blog'), as: 'blog'
   get '/facebook',
       to: redirect('https://www.facebook.com/4dandies/'),
       as: 'facebook'

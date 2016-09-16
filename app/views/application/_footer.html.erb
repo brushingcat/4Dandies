@@ -1,4 +1,10 @@
 <footer>
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <%= render "users/shared/subscribe" %>
+    </div>
+  </div>
   <div>
     <div class="row row-info">
       <div class="col-sm-4">
@@ -8,12 +14,12 @@
               <img alt="Equateur Logo" class="blog-img" src="https://da7alfkd8qg77.cloudfront.net/assets/v2/footer/equateur-9f60606662b1ec99a9e15ba07d21ed4b08aee7dc456324f6946848c7d528ebff.png">
             </div>
             <div class="description-wrapper">
-              <div class="blog-title">Equateur</div>
+              <div class="blog-title">4u</div>
               <div class="blog-description">At Bonobos, we strive to make great
                 clothing. With Equateur, we tell the stories of the humans who wear
                 it.
                 <nav class="cl-effect-4" id="cl-effect-4">
-                  <a class="blog-link" href="http://equateur.bonobos.com/" rel="noopener" target="_blank">Read
+                  <a class="blog-link" href="<%= blog_path %>">Read
                     the latest post</a>
                 </nav>
               </div>
