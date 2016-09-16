@@ -16,10 +16,9 @@
 //= require turbolinks
 //= require_tree .
 
+var url=window.location.href+"#";
 
-//Carousel animation
-$(document).ready(function () {
-
+$(document).on('turbolinks:load', function() {
     //Nav animation
     $(window).scroll(function () {
         if ($(".navbar").offset().top > 50) {
@@ -27,19 +26,26 @@ $(document).ready(function () {
         } else {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
         }
+
     });
 
+    //Carousel animation
     $('#carousel-demo1').scrollingCarousel( {
         autoScroll: true,
         autoScrollSpeed: '20000'
     });
 
     //scroll animation
-    $(document).ready(function () {
-        $("#arrow").click(function () {
-            $('html, body').animate({
-                scrollTop: $("#left").offset().top
-            }, 1000);
+    $('a[href^=url]').on('click',function (e) {
+        e.preventDefault();
+        window.location.hostname
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
         });
     });
 });

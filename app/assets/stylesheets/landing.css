@@ -56,15 +56,15 @@ body.modal-open .modal{
 
 /* Brand Carousel */
 
-.carousel-demo {
+#carousel-demo1 {
     margin: 2.5vh;
     color: #050505;
-}
-
-.carousel-element {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#carousel-demo1 .carousel-element {
     font-size: 5vh;
     width: 300px;
 }

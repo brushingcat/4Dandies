@@ -11,20 +11,29 @@
     padding: 0;
     background-color: rgba(255, 255, 255, 0.9)!important;
     border-bottom: 1px solid #f2f2f2;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22)!important;
 }
 
 .navbar-default {
+    background-image: none!important;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2)!important;
     border-bottom-style: dashed!important;
     background-color: transparent;
+    box-shadow: none;
 }
 
-.navbar-default .navbar-brand {
-    font-weight: 800;
-    font-size: 25px;
-    color: #050505;
+.top-nav-collapse .navbar-brand>img{
+    padding: 10px;
+}
+
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 100%;
 }
 
 .navbar-default .nav li a {
@@ -35,20 +44,20 @@
     color: #050505;
 }
 
-.navbar-default .nav li.other_buttons:hover{
+.navbar-default .nav li.other_buttons:hover {
     background-color: #050505!important;
 }
 
-.navbar-default .nav li.other_buttons:hover a{
+.navbar-default .nav li.other_buttons:hover a {
     color: white !important;
 }
 
-.navbar-default .nav li.subscribe-button{
+.navbar-default .nav li.subscribe-button {
     border: solid 1px #28c891;
     border-radius: 3px;
 }
 
-.navbar-default .nav li.subscribe-button a{
+.navbar-default .nav li.subscribe-button a {
     color: #28c891;
 }
 
@@ -56,40 +65,38 @@
     background-color: #28c891;
 }
 
-.navbar-default .nav li.subscribe-button:hover a{
+.navbar-default .nav li.subscribe-button:hover a {
     color: #FFFFFF;
 }
 
-
-.navbar-default .container{
+.navbar-default .container {
     width: inherit;
-    margin:0 10%;
+    margin: 0 10%;
 }
 
-.navbar-default .navbar-toggle{
+.navbar-default .navbar-toggle {
     border-color: transparent;
 }
 
-.navbar-default .navbar-toggle .icon-bar{
+.navbar-default .navbar-toggle .icon-bar {
     background-color: #050505;
-
 }
 
-.navbar-default .navbar-collapse{
+.navbar-default .navbar-collapse {
     border-color: #050505;
-
 }
-.navbar-default .navbar-collapse ul{
+
+.navbar-default .navbar-collapse ul {
     float: right;
     margin: 7.5px -15px !important;
 }
 
-.navbar-default .navbar-collapse li{
+.navbar-default .navbar-collapse li {
     text-align: right;
     padding: 10px 10px;
 }
 
-.navbar-default .navbar-collapse li a{
+.navbar-default .navbar-collapse li a {
     text-align: right;
     padding: 0px;
 }
