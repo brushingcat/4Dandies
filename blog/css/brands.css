@@ -3,6 +3,7 @@
 	width: 100%;
 	overflow: hidden;
 	height:100%;
+	padding: 7%;
 	background: url(../img/bgTop.jpg) center center no-repeat;
 	/*background-color:  #3f2d28;*/
 	-webkit-background-size: cover;
