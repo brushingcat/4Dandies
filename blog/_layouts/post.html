@@ -2,17 +2,15 @@
 layout: default
 ---
 
+{% include header.html %}
+
 <div class="post_title">
     <div class="container">
         <div class="row">
             <h1>Violência doméstica.
             </h1>
         </div>
-        <di
-Posts
-Sep 9, 2016
-Welcome to Jekyll!
-subscribe via RSSv class="row">
+        <div>
             <i class="fa fa-calendar-o" aria-hidden="true"></i>
             <p>7, Setembro, 2016</p>
         </div>
@@ -32,12 +30,27 @@ subscribe via RSSv class="row">
             </div>
             <div class="col-sm-2 post_share">
                 <ul id="social_buttons" class="social_buttons">
-                    <i class="fa fa-facebook hvr-grow"></i>
-                    <i class="fa fa-pinterest hvr-grow"></i>
-                    <i class="fa fa-twitter hvr-grow"></i>
-                    <i class="fa fa-google-plus-square hvr-grow"></i>
+                    <a class="fa fa-facebook hvr-grow" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;" title="Facebook"></a>
+                    <a class="fa fa-pinterest hvr-grow" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;" title="Pinterest"></a>
+                    <a class="fa fa-twitter hvr-grow" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;" title="Twitter"></a>
+                    <a class="fa fa-google-plus-square hvr-grow" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;" title="Google-Plus"></a>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    var facebook = document.getElementsByClassName("fa-facebook")[0];
+    facebook.setAttribute("href","https://www.facebook.com/sharer/sharer.php?u="+window.location.href );
+
+    var twitter = document.getElementsByClassName("fa-twitter")[0];
+    twitter.setAttribute("href","https://twitter.com/intent/tweet?url="+window.location.href );
+
+    var google = document.getElementsByClassName("fa-google-plus-square")[0];
+    google.setAttribute("href","https://plus.google.com/share?url="+window.location.href );
+
+    var pinterest = document.getElementsByClassName("fa-pinterest")[0];
+    pinterest.setAttribute("href","http://pinterest.com/pin/create/button/?url="+window.location.href );
+
+</script>
