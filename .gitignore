@@ -28,4 +28,7 @@ coverage/
 Gemfile.lock
 
 public/blog/feed.xml
-/public/*
+public/brands
+public/blog
+public/css
+public/img
