@@ -28,8 +28,8 @@
 }
 
 .top-nav-collapse .navbar-brand #img {
-  margin: 5px 0px;
-  height: 40px;
+  margin: 5% 0px;
+  height: 70%;
   background-image: image_url('4_logo@2x.png');
 }
 
@@ -39,6 +39,16 @@
   background-image: image_url('logo_preto-100.png');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+
+.top-nav-collapse .navbar-nav {
+  margin: 7.5px !important;
+}
+
+.top-nav-collapse .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .navbar-default .nav li a {
@@ -107,4 +117,3 @@
   float: right;
   text-align: right;
 }
-
