@@ -9,22 +9,46 @@
 
 .top-nav-collapse {
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.9)!important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
     border-bottom: 1px solid #f2f2f2;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22) !important;
 }
 
 .navbar-default {
+    background-image: none !important;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2)!important;
-    border-bottom-style: dashed!important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom-style: dashed !important;
     background-color: transparent;
+    box-shadow: none;
 }
 
-.navbar-default .navbar-brand {
-    font-weight: 800;
-    font-size: 25px;
-    color: #050505;
+.navbar-brand{
+    padding: 0px;
+}
+
+.top-nav-collapse .navbar-brand #img {
+    margin: 5% 0px;
+    height: 70%;
+    background-image: url('/img/4_logo@2x.png');
+}
+
+.navbar-brand #img {
+    width: 200px;
+    height: 100%;
+    background-image: url('/img/logo_preto-100.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.top-nav-collapse .navbar-nav {
+    margin: 7.5px !important;
+}
+
+.top-nav-collapse .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navbar-default .nav li a {
@@ -35,20 +59,22 @@
     color: #050505;
 }
 
-.navbar-default .nav li.other_buttons:hover{
-    background-color: #050505!important;
+.navbar-default .nav li.other_buttons:hover {
+    background-color: #050505 !important;
 }
 
-.navbar-default .nav li.other_buttons:hover a{
+.navbar-default .nav li.other_buttons:hover a {
     color: white !important;
 }
 
-.navbar-default .nav li.subscribe-button{
-    border: solid 1px #28c891;
-    border-radius: 3px;
+.navbar-default .nav li.subscribe-button {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: solid 1px #28c891;
 }
 
-.navbar-default .nav li.subscribe-button a{
+.navbar-default .nav li.subscribe-button a {
     color: #28c891;
 }
 
@@ -56,40 +82,38 @@
     background-color: #28c891;
 }
 
-.navbar-default .nav li.subscribe-button:hover a{
+.navbar-default .nav li.subscribe-button:hover a {
     color: #FFFFFF;
 }
 
-
-.navbar-default .container{
+.navbar-default .container {
     width: inherit;
-    margin:0 10%;
+    margin: 0 10%;
 }
 
-.navbar-default .navbar-toggle{
+.navbar-default .navbar-toggle {
     border-color: transparent;
 }
 
-.navbar-default .navbar-toggle .icon-bar{
+.navbar-default .navbar-toggle .icon-bar {
     background-color: #050505;
-
 }
 
-.navbar-default .navbar-collapse{
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #050505;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-collapse {
     border-color: #050505;
-
 }
-.navbar-default .navbar-collapse ul{
+
+.collapse.in ul, .collapsing ul{
+    max-width: 250px;
+    padding-right: 10px;
     float: right;
-    margin: 7.5px -15px !important;
-}
-
-.navbar-default .navbar-collapse li{
     text-align: right;
-    padding: 10px 10px;
-}
-
-.navbar-default .navbar-collapse li a{
-    text-align: right;
-    padding: 0px;
 }

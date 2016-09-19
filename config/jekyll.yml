@@ -6,7 +6,7 @@ description: 'Write an awesome description for your new site here. You can edit 
   results) and in your feed.xml site description.'
 baseurl: ""
 url: http://www.4dandies.com
-destination: "../public/"
+destination: "../public/static"
 twitter_username: real4dandies
 github_username: 4dandies
 markdown: kramdown
