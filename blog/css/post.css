@@ -38,10 +38,7 @@ body {
     display: flex;
 }
 
-.post_body .post_author, .post_share {
-}
-
-.post_author{
+.post_author {
     margin-right: 20px;
 }
 
@@ -49,11 +46,21 @@ body {
     padding-top: 10px;
 }
 
-.post_body .post_content {
+.post_body {
+    margin-bottom: 50px;
 }
 
-.post_body .post_share{
-        display: flex;
+.post_content p:first-child::first-letter {
+    float: left;
+    font-size: 4.688rem;
+    line-height: 4.375rem;
+    padding-top: .25rem;
+    padding-right: .5rem;
+    padding-left: .188rem;
+}
+
+.post_body .post_share {
+    display: flex;
     justify-content: center;
 }
 

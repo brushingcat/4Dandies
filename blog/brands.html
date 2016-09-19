@@ -2,34 +2,26 @@
 layout: default
 description: "A Clean Blog Theme by Start Bootstrap"
 ---
-
-<div class="wrapper">
+<div class="wrapped-content">
     <div class="container">
-        <div class="masonry-container">
-            {% for brand in site.brands %}
-            <div class="card-box col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="header" style="background-image: url({{ post.header-img |  prepend: site.baseurl }})">
-                        <!--<img src="{{post.header-img}}">-->
-                        <div class="filter"></div>
-                        <div class="actions">
-                            <a href="{{ brand.url | prepend: site.baseurl }}">
-                                <button class="btn btn-round btn-fill btn-neutral btn-modern">
-                                    Read Article
-                                </button>
-                            </a>
+        <div class="brands-gallery">
+            <ul>
+                {% for brand in site.brands %}
+                <li class="brand col-md-4 col-sm-6">
+                    <a href="{{ brand.url | prepend: site.baseurl }}">
+                        <div class="logoPic">
+                            <img class="img-responsive"
+                                 src="http://saccus.pt/images/logo.png">
                         </div>
-                    </div>
-                    <div class="content">
-                        <h6 class="category">{{ brand.category }}</h6>
-                        <h4 class="title">
-                            <a href="{{ brand.url | prepend: site.baseurl }}">{{brand.title}} </a>
-                        </h4>
-                        <p class="description">{{brand.subtitle}}<br><br></p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+                        <div class="brand-info">
+                            <h2>{{ brand.title }}</h2>
+                            <p>Balelas asgsgsdgsdhdsh sgsdh fdhdff hdfh dfh dfh
+                                re gerwe vwes ewfweeg weg w bwreghbweb</p>
+                        </div>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>

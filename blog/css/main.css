@@ -3,3 +3,86 @@ body{
   background-color: #FAFAFA!important
 
 }
+
+body {
+    font-size: 1em;
+    line-height: 1.428571429;
+    font-family: 'Quicksand', sans-serif!important;
+    background-color: #f7f7f7!important;
+}
+
+.brands-gallery ul {
+    list-style: none;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 12px;
+    padding-bottom: 50px;
+    font-size: 0;
+}
+
+.brands-gallery .brand {
+    box-sizing: border-box;
+    position: relative;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    transition: all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    cursor: pointer;
+  
+    background: transparent;
+    -webkit-transform: translateZ(0);
+    overflow: hidden;
+}
+
+.brands-gallery ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.brands-gallery {
+    margin: 0 auto;
+}
+
+
+.brands-gallery .brand .logoPic {
+    height: 196px;
+    display: flex;
+    align-items: center;
+}
+
+.brands-gallery .brand .logoPic .img-responsive {
+    margin: auto;
+}
+
+
+.brands-gallery .brand a {
+    display: block;
+    color: #333;
+    position: absolute;
+    padding: 40px;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+
+.brands-gallery .brand a:hover {
+    background-color: #fff;
+}
+
+.brands-gallery .brand {
+    cursor: pointer;
+}
+
+.brands-gallery .brand .brand-info{
+    text-align: center;
+}
+
+.brands-gallery .brand .brand-info p {
+    color: #888;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 14px;
+}
