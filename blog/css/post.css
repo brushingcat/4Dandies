@@ -13,9 +13,7 @@ body {
 
 .header {
     height: 400px;
-    background-image: url('/img/ams.jpg');
-    background-position: 50% 80%;
-    background-size: cover;
+    overflow: hidden;
 }
 
 .post .container {
