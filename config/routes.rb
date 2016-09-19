@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   get '/blog', to: redirect('/blog'), as: 'blog'
-  get '/brands', to: redirect('/blog/brands'), as: 'brands'
+  get '/brands', to: redirect('/brands'), as: 'brands'
   get '/facebook',
       to: redirect('https://www.facebook.com/4dandies/'),
       as: 'facebook'

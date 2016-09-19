@@ -2,7 +2,7 @@ Rails.application.config.after_initialize do
   Rails.logger = ActiveSupport::Logger.new(STDOUT)
   begin
     # make a spot for the site
-    dest = Rails.root.join('public/blog')
+    dest = Rails.root.join('public/')
 
     # generate the site
     Jekyll::Site.new(
