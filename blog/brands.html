@@ -6,14 +6,14 @@ description: "A Clean Blog Theme by Start Bootstrap"
 <div class="wrapper">
     <div class="container">
         <div class="masonry-container">
-            {% for brands in site.brands %}
+            {% for brand in site.brands %}
             <div class="card-box col-md-4 col-sm-6">
                 <div class="card">
                     <div class="header" style="background-image: url({{ post.header-img |  prepend: site.baseurl }})">
                         <!--<img src="{{post.header-img}}">-->
                         <div class="filter"></div>
                         <div class="actions">
-                            <a href="{{ post.url | prepend: site.baseurl }}">
+                            <a href="{{ brand.url | prepend: site.baseurl }}">
                                 <button class="btn btn-round btn-fill btn-neutral btn-modern">
                                     Read Article
                                 </button>
@@ -21,11 +21,11 @@ description: "A Clean Blog Theme by Start Bootstrap"
                         </div>
                     </div>
                     <div class="content">
-                        <h6 class="category">{{ brands.category }}</h6>
+                        <h6 class="category">{{ brand.category }}</h6>
                         <h4 class="title">
-                            <a href="{{ post.url | prepend: site.baseurl }}">{{brands.title}} </a>
+                            <a href="{{ brand.url | prepend: site.baseurl }}">{{brand.title}} </a>
                         </h4>
-                        <p class="description">{{brands.subtitle}}<br><br></p>
+                        <p class="description">{{brand.subtitle}}<br><br></p>
                     </div>
                 </div>
             </div>
