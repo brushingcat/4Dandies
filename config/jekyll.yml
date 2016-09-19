@@ -4,9 +4,9 @@ email: 4u@4dandies.com
 description: 'Write an awesome description for your new site here. You can edit this
   line in jekyll.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.'
-baseurl: ""
+baseurl: "/static"
 url: http://www.4dandies.com
-destination: "../public/"
+destination: "../public/static"
 twitter_username: real4dandies
 github_username: 4dandies
 markdown: kramdown
