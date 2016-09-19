@@ -28,4 +28,4 @@ coverage/
 Gemfile.lock
 
 public/blog/feed.xml
-
+/public/*
