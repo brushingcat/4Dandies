@@ -77,5 +77,5 @@ gem 'font-awesome-sass', '~> 4.6.2'
 gem "jekyll", "3.2.1"
 
 group :jekyll_plugins do
-  gem "jekyll-paginate"
+  gem "octopress-paginate"
 end

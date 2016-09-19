@@ -12,10 +12,9 @@ destination: "../public/blog"
 twitter_username: real4dandies
 github_username: 4dandies
 markdown: kramdown
-paginate: 6
 permalink: pretty
 gems:
-- jekyll-paginate
+- octopress-paginate
 
 collections:
  brands:
