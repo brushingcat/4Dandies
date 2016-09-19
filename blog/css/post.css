@@ -13,7 +13,7 @@ body {
 
 .header {
     height: 400px;
-    background-image: url(images/new.jpg);
+    background-image: url('/img/ams.jpg');
     background-position: 50% 80%;
     background-size: cover;
 }

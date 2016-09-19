@@ -1,6 +1,10 @@
 Rails.application.config.after_initialize do
   Rails.logger = ActiveSupport::Logger.new(STDOUT)
   begin
+    FileUtils.rm_rf(Rails.root.join('public/brands'))
+    FileUtils.rm_rf(Rails.root.join('public/css'))
+    FileUtils.rm_rf(Rails.root.join('public/img'))
+    FileUtils.rm_rf(Rails.root.join('public/blog'))
     # make a spot for the site
     dest = Rails.root.join('public/static')
 
@@ -13,6 +17,8 @@ Rails.application.config.after_initialize do
                              })
     ).process
 
+    FileUtils.copy_entry dest, Rails.root.join('public')
+    FileUtils.rm_rf(dest)
     # the strange codes give the output color
     Rails.logger.info "\e[0;32;49mJekyll site built!\e[0m]]"
   rescue => e
