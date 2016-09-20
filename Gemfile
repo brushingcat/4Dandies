@@ -53,6 +53,7 @@ group :development do
 end
 
 group :production do
+  gem 'newrelic_rpm'
   gem 'pg', '0.18.4'
 end
 
@@ -80,4 +81,3 @@ group :jekyll_plugins do
   gem "octopress-paginate"
 end
 
-gem 'newrelic_rpm'
