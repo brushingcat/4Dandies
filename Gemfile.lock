@@ -145,6 +145,7 @@ GEM
     multi_json (1.12.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    newrelic_rpm (3.16.2.321)
     nio4r (1.2.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
@@ -321,6 +322,7 @@ DEPENDENCIES
   jekyll (= 3.2.1)
   jquery-rails
   listen (~> 3.0.5)
+  newrelic_rpm
   octopress-paginate
   omniauth-facebook
   omniauth-google-oauth2
