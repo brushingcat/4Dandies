@@ -1,9 +1,7 @@
-body {
-    font-family: 'Fjord One', serif;
-}
-
-.post {
+.post_body {
     text-align: justify;
+    font-family: 'Fjord One', serif;
+    margin-bottom: 50px;
 }
 
 .social_buttons {
@@ -16,10 +14,11 @@ body {
     overflow: hidden;
 }
 
-.post .container {
-    margin-top: 85px;
-    height: 400px;
+.header>img{
+    max-width: 100%;
 }
+
+
 
 .title_post {
     text-align: center;
@@ -44,10 +43,6 @@ body {
 
 .post_body .avatar {
     padding-top: 10px;
-}
-
-.post_body {
-    margin-bottom: 50px;
 }
 
 .post_content p:first-child::first-letter {
