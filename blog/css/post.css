@@ -1,8 +1,12 @@
+.post_title, .post_body{
+    background-color: #FFFFFF;
+}
+
 .post_body {
     text-align: justify;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .social_buttons {
@@ -26,7 +30,7 @@
     font-family: 'Playfair Display', serif;;
     font-size: 16px;
     text-align: center;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .post_title .h1,.post_title h1{
@@ -81,7 +85,7 @@
     height: 40px;
     width: 40px;
     border: solid 1px rgba(0, 0, 0, 0.1);
-    color: black;
+    color: #050505;
     text-decoration: none;
 }
 

@@ -2,7 +2,7 @@ body {
     font-size: 1em;
     line-height: 1.428571429;
     font-family: 'Lato', sans-serif;
-    background-color: #FFFFFF!important;
+    background-color: #FAFAFA;
     color: #050505;
 }
 
@@ -11,7 +11,7 @@ body {
     padding-top: 75px;
     padding-bottom: 30px;
     margin-bottom: 25px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
 }
 .header-blog .container {
@@ -38,6 +38,8 @@ body {
     padding-top: 85px;
     padding-bottom: 30px;
     margin-bottom: 25px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
 }
 
 .header-brands .container {
