@@ -30,7 +30,7 @@ comments: true
                     <p>Tags</p>
                     <div class="tags">
                         {% for tag in page.tags %}
-                            <a>{{ tag }}</a>
+                            <a href="/tag/{{ tag }}">{{ tag }}</a>
                         {% endfor %}
                     </div>
                 </div>
