@@ -1,6 +1,7 @@
 .post_body {
     text-align: justify;
-    font-family: 'Fjord One', serif;
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 50px;
 }
 
@@ -20,13 +21,19 @@
 
 
 
-.title_post {
+.post_title{
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;;
+    font-size: 16px;
     text-align: center;
-    font-family: Fjord One;
+    margin-bottom: 30px;
+}
+
+.post_title .h1,.post_title h1{
+    font-size: 70px;
 }
 
 .post_title .container {
-    text-align: center;
     padding-bottom: 20px;
 }
 
@@ -47,11 +54,10 @@
 
 .post_content p:first-child::first-letter {
     float: left;
-    font-size: 4.688rem;
-    line-height: 4.375rem;
-    padding-top: .25rem;
-    padding-right: .5rem;
-    padding-left: .188rem;
+    font-size: 70px;
+    line-height: 60px;
+    padding: 2px 5px 0px 0px;
+    font-family: serif;
 }
 
 .post_body .post_share {

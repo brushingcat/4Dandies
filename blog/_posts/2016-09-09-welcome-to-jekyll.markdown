@@ -2,7 +2,9 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-09-09 17:07:35 +0100
-categories: jekyll update
+category: News
+subtitle: "This is a example post"
+img: "/img/ams.jpg"
 tags:
 - bruna
 - code

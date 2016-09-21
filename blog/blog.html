@@ -3,16 +3,16 @@ layout: default
 description: "A Clean Blog Theme by Start Bootstrap"
 paginate:
     collection:   posts
-    per_page:     6
+    per_page:     12
 ---
 <div class="header-blog">
     <div class="container">
         <div class="row">
             <div class="col-md-4 left">
-                <img src="img/blog-logo.png">
+                <img src="{{ '/img/blog-logo.png' | prepend: site.baseurl }}">
             </div>
             <div class="col-md-8 right">
-                <h1>4DANDIES Oficial Blog <br/>
+                <h1>4DANDIES Blog Oficial <br/>
                     Inspira-te para encontrar o teu visual perfeito.</h1>
             </div>
         </div>
@@ -24,7 +24,7 @@ paginate:
             {% for post in paginator.posts %}
             <div class="card-box col-md-4 col-sm-6">
                 <div class="card">
-                    <div class="header" style="background-image: url({{ post.header-img |  prepend: site.baseurl }})">
+                    <div class="header" style="background-image: url({{ post.img |  prepend: site.baseurl }})">
                         <!--<img src="{{post.header-img}}">-->
                         <div class="filter"></div>
                         <div class="actions">
