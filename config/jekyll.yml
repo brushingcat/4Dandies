@@ -20,3 +20,10 @@ collections:
  posts:
   output: true
   permalink: blog/:year/:month/:day/:title/
+
+facebook: 'https://www.facebook.com/4dandies/'
+instagram: 'https://www.instagram.com/4dandies/'
+google_plus: 'https://plus.google.com/u/0/b/100144721967412221214/100144721967412221214'
+youtube: 'https://www.youtube.com/channel/UCdoe0MItp8CJd3x1axvo0XA'
+twitter: 'https://twitter.com/real4dandies'
+pinterest: 'https://pt.pinterest.com/4dandies/'
