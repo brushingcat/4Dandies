@@ -21,12 +21,11 @@ description: "A Clean Blog Theme by Start Bootstrap"
                     <a href="{{ brand.url | prepend: site.baseurl }}">
                         <div class="logoPic">
                             <img class="img-responsive"
-                                 src="http://saccus.pt/images/logo.png">
+                                 src="{{ brand.logo }}">
                         </div>
                         <div class="brand-info">
-                            <h2>{{ brand.title }}</h2>
-                            <p>Balelas asgsgsdgsdhdsh sgsdh fdhdff hdfh dfh dfh
-                                re gerwe vwes ewfweeg weg w bwreghbweb</p>
+                            <h2>{{ brand.name }}</h2>
+                            <p>{{ brand.description }}</p>
                         </div>
                     </a>
                 </li>

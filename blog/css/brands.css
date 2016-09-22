@@ -2,13 +2,14 @@
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	height:100%;
+	height:500px;
 	background: url(../img/bgTop.jpg) center center no-repeat;
 	/*background-color:  #3f2d28;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	padding-top: 200px;
 }
 .headerLine:after{
 	content: "";
