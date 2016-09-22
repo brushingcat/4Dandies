@@ -126,6 +126,7 @@ body {
     height: 100%;
     left: 0;
     right: 0;
+    text-decoration: none;
 }
 
 .brands-gallery .brand a:hover {
