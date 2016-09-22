@@ -1,7 +1,7 @@
 .card h1, .card .h1, .card h2, .card .h2, .card h3, .card .h3, .card h4, .card .h4, .card h5, .card .h5, .card h6, .card .h6, .card p, .card .navbar, .card .brand, .card .btn, .card a, .card .td-name, .card td {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "Playfair Display", "Raleway", "Helvetica Neue", Arial, sans-serif;
+    font-family:  "Raleway", "Helvetica Neue", Arial, sans-serif;
 }
 
 .card h1, .card .h1, .card h2, .card .h2, .card h3, .card .h3, .card h4, .card .h4 {
@@ -33,14 +33,14 @@
 
 .ui-slider-handle:focus,
 /*           Animations              */
-
+/**
 .tagsinput .tag, .tagsinput-remove-link, .filter, .btn-hover, [data-toggle="collapse"] i {
     -webkit-transition: all 150ms linear;
     -moz-transition: all 150ms linear;
     -o-transition: all 150ms linear;
     -ms-transition: all 150ms linear;
     transition: all 150ms linear;
-}
+}*/
 
 .btn {
     border-width: 1px;
@@ -116,8 +116,8 @@
     margin-bottom: 30px;
     position: relative;
     max-width: 320px;
-    min-height: 400px;
-    max-height: 400px;
+    min-height: 450px;
+    max-height: 450px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -289,4 +289,19 @@
 .card h6 {
     font-size: 12px;
     margin: 0;
+}
+
+
+.card .keywords{
+    text-align:center;
+    color:white;
+}
+
+.card .keywords>h6{
+    background-color: #050505;
+    float: left;
+    padding: 4px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 3px;
 }
