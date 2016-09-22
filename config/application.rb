@@ -12,6 +12,8 @@ module Landing
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     # Do not include default locale in generated URLs
+    config.middleware.use Rack::Deflater
+
     RoutingFilter::Locale.include_default_locale = false
 
     config.i18n.available_locales = %w(en pt-PT)
