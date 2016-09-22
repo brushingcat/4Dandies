@@ -7,14 +7,12 @@ RSpec.describe UserMailer, type: :mailer do
     let(:mail) { UserMailer.welcome_email(user).deliver_now }
 
     it "renders the headers" do
-      expect(mail.subject).to eq("Welcome to 4")
-      expect(mail.to).to eq(["michael@example.com"])
-      expect(mail.from).to eq(["noreply@example.com"])
+      expect(mail.subject).to eq("Welcome to 4DANDIES")
+      expect(mail.to).to eq([user.email])
+      expect(mail.from).to eq(["welcome@4dandies.com"])
     end
 
-    it "renders the body" do
-      expect(mail.body.encoded).to match("Hi")
-    end
+
   end
 end
 
