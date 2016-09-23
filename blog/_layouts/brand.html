@@ -85,6 +85,11 @@ layout: default
             </div>
             <div class="soc col-md-12">
                 <ul>
+                    {% if page.website %}
+                    <li class="soc1"><a href="{{ page.website }}"
+                                        target="_blank"><i
+                            class="fa fa-home"></i></a></li>
+                    {% endif %}
                     {% if page.facebook %}
                     <li class="soc1"><a href="{{ page.facebook }}"
                                         target="_blank"><i
