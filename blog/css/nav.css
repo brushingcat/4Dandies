@@ -31,13 +31,13 @@
 
 .top-nav-collapse .navbar-brand #img {
     height: 70%;
-    background-image: image_url('4_logo@2x.png');
+    background-image: url('/img/4_logo@2x.png');
 }
 
 .navbar-brand #img {
     width: 200px;
     height: 100%;
-    background-image: image_url('logo_preto-100.png');
+    background-image: url('/img/logo_preto-100.png');
     background-size: contain;
     background-repeat: no-repeat;
     top: 50%;
