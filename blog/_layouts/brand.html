@@ -19,7 +19,8 @@ layout: default
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container"
+     style="position: relative;background-color: #fafafa; z-index: 999;">
     <div class="row">
         <div class="col-md-4 project">
             <!--h3 id="counter">0</h3-->
@@ -48,8 +49,9 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="col-md-12 video">
+            {% assign opt= "?modestbranding=1&autohide=1&fs=0" %}
             <iframe width="100%" frameborder="0" style="border:0"
-                    src="{{ page.video }}" allowfullscreen>
+                    src="{{ page.video | append: opt }}" allowfullscreen>
             </iframe>
         </div>
     </div>
@@ -87,37 +89,37 @@ layout: default
                 <ul>
                     {% if page.website %}
                     <li><a href="{{ page.website }}"
-                                        target="_blank"><i
+                           target="_blank"><i
                             class="fa fa-home"></i></a></li>
                     {% endif %}
                     {% if page.facebook %}
                     <li><a href="{{ page.facebook }}"
-                                        target="_blank"><i
+                           target="_blank"><i
                             class="fa fa-facebook"></i></a></li>
                     {% endif %}
                     {% if page.instagram %}
                     <li><a href="{{ page.instagram }}"
-                                        target="_blank"><i
+                           target="_blank"><i
                             class="fa fa-instagram"></i></a></li>
                     {% endif %}
                     {% if page.pinterest %}
                     <li><a href="{{ page.pinterest }}"
-                                        target="_blank"><i
+                           target="_blank"><i
                             class="fa fa-pinterest"></i></a></li>
                     {% endif %}
                     {% if page.twitter %}
                     <li><a href="{{ page.twitter }}"
-                                        target="_blank"><i
+                           target="_blank"><i
                             class="fa fa-twitter"></i></a></li>
                     {% endif %}
                     {% if page.youtube %}
                     <li><a href="{{ page.youtube }}"
-                                        target="_blank"><i
+                           target="_blank"><i
                             class="fa fa-youtube-play"></i></a></li>
                     {% endif %}
                     {% if page.google_plus %}
                     <li><a href="{{ page.google_plus }}"
-                                        target="_blank"><i
+                           target="_blank"><i
                             class="fa fa-google-plus-square"></i></a>
                     </li>
                     {% endif %}
@@ -129,7 +131,7 @@ layout: default
             <div class="col-md-12 map">
                 <iframe width="100%" frameborder="0" style="border:0"
                         src="{{ 'https://www.google.com/maps/embed/v1/place?key=AIzaSyCxHwbtkSpeGs5YZENhdf_wUikZZJEeKGM
-    &q=' | append: page.map}}" allowfullscreen>
+    &q=' | append: page.map }}" allowfullscreen>
                 </iframe>
                 <script>
                     $('.map').click(function () {

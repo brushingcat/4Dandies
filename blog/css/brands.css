@@ -185,9 +185,10 @@
 }
 
 .video{
+    margin-top: -35px;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
+    padding-bottom: calc(56.25% - 81px); /* 16:9 */
+    padding-top: 80px;
     height: 0;
 }
 .video iframe{
