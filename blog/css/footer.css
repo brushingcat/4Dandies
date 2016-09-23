@@ -40,8 +40,9 @@ footer .blog-link {
 footer {
     font-size: 14px !important;
     font-family: 'Helvetica' !important;
-    background-size: 1720px;
-    background-color: #666666;
+    background-image: url('/img/footer.png');
+    background-size: 800px;
+    background-color: #050505;
 }
 
 footer .row-info {
@@ -50,7 +51,6 @@ footer .row-info {
 }
 
 footer .row-copyright-social {
-    background-color: black;
     width: 100%;
     padding: 0px 30px 0px 30px;
     margin: 0px 0px 0px 0px;
