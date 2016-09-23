@@ -269,156 +269,28 @@
     color: #050505;
 }
 
-.soc1 {
+.soc li {
     width: 52px;
     height: 52px;
     border: 2px solid #050505;
     border-radius: 50px;
 }
 
-.soc1 a:hover {
-    color: #ffffff;
-    border: 0;
-    box-shadow: none;
-}
-
-.soc1:hover {
+.soc li:hover {
     cursor: pointer;
     border: 2px solid #050505;
     background: #050505;
 }
 
-.soc2 {
-    width: 52px;
-    height: 52px;
-    border: 2px solid #050505;
-    border-radius: 50px;
-}
-
-.soc2 a:hover {
+.soc li a:hover {
     color: #ffffff;
     border: 0;
     box-shadow: none;
 }
 
-.soc2:hover {
-    cursor: pointer;
-    border: 2px solid #050505;
-    background: #050505;
-}
 
-.soc3 {
-    width: 52px;
-    height: 52px;
-    border: 2px solid #050505;
-    border-radius: 50px;
-}
-
-.soc3 a:hover {
-    color: #ffffff;
-    border: 0;
-    box-shadow: none;
-}
-
-.soc3:hover {
-    cursor: pointer;
-    border: 2px solid #050505;
-    background: #050505;
-}
-
-.soc4 {
-    width: 52px;
-    height: 52px;
-    border: 2px solid #050505;
-    border-radius: 50px;
-}
-
-.soc4 a:hover {
-    color: #ffffff;
-    border: 0;
-    box-shadow: none;
-}
-
-.soc4:hover {
-    cursor: pointer;
-    border: 2px solid #050505;
-    background: #050505;
-}
-
-.soc5 {
-    width: 52px;
-    height: 52px;
-    border: 2px solid #050505;
-    border-radius: 50px;
-}
-
-.soc5 a:hover {
-    color: #ffffff;
-    border: 0;
-    box-shadow: none;
-}
-
-.soc5:hover {
-    cursor: pointer;
-    border: 2px solid #050505;
-    background: #050505;
-}
-
-.soc6 {
-    width: 52px;
-    height: 52px;
-    border: 2px solid #050505;
-    border-radius: 50px;
-}
-
-.soc6 a:hover {
-    color: #ffffff;
-    border: 0;
-    box-shadow: none;
-}
-
-.soc6:hover {
-    cursor: pointer;
-    border: 2px solid #050505;
-    background: #050505;
-}
-
-.soc7 {
-    width: 52px;
-    height: 52px;
-    border: 2px solid #050505;
-    border-radius: 50px;
-}
-
-.soc7 a:hover {
-    color: #ffffff;
-    border: 0;
-    box-shadow: none;
-}
-
-.soc7:hover {
-    cursor: pointer;
-    border: 2px solid #050505;
-    background: #050505;
-}
-
-.soc8 {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #050505;
-    border-radius: 50px;
-}
-
-.soc8 a:hover {
-    color: #ffffff;
-    border: 0;
-    box-shadow: none;
-}
-
-.soc8:hover {
-    cursor: pointer;
-    border: 2px solid #050505;
-    background: #050505;
+.soc li a i:hover {
+    color: white;
 }
 
 .lineBlack {
