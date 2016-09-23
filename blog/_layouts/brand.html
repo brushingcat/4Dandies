@@ -114,6 +114,13 @@ layout: default
                     src="{{ 'https://www.google.com/maps/embed/v1/place?key=AIzaSyCxHwbtkSpeGs5YZENhdf_wUikZZJEeKGM
     &q=' | append: page.map}}" allowfullscreen>
             </iframe>
+            <script>
+                $('.wwa').click(function () {
+                            $(this).find('iframe').addClass('clicked')
+                        }).mouseleave(function () {
+                            $(this).find('iframe').removeClass('clicked')
+                        });
+            </script>
         </div>
     </div>
 </div>

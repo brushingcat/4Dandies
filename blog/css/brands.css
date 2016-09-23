@@ -179,14 +179,18 @@
 }
 
 .wwa {
-    margin-top: 8px;
     text-align: center;
     padding: 0;
 }
 
-.wwa > iframe {
+.wwa iframe {
     height: 600px;
     width: 100%;
+    pointer-events: none;
+}
+
+.wwa iframe.clicked{
+    pointer-events: auto;
 }
 
 .wwa h3 {
