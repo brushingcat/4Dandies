@@ -91,7 +91,6 @@ body {
     transition: all 200ms ease-out;
     -webkit-transition: all 200ms ease-out;
     cursor: pointer;
-
     background: transparent;
     -webkit-transform: translateZ(0);
     overflow: hidden;
