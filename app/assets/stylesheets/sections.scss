@@ -15,12 +15,12 @@
     display: flex;
 }
 
-#left {
+.section .left {
     background-color: #ffffff;
     padding: 0px 7% 0px 0px;
 }
 
-#right {
+.section .right {
     background-color: #f7f7f7;
     padding: 0px 0px 0px 7%;
 }
@@ -29,7 +29,7 @@
     align-self: center;
 }
 
-#info {
+.section .info {
     align-self: center;
 }
 
@@ -40,20 +40,20 @@
 }
 
 
-.section #img {
+.section .img {
     background-size: cover;
     min-height: 45vh;
 }
 
-.blog #img {
+.blog .img {
     background-image: image_url('blog-min.jpg');
 }
 
-.aboutus #img {
+.aboutus .img {
     background-image: image_url('brands-min.jpeg');
 }
 
-.wwwant #img {
+.wwwant .img {
     background-image: image_url('team-min.jpg');
 }
 
