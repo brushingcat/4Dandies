@@ -167,7 +167,7 @@
 }
 
 .aboutUs {
-    margin-top: 32px;
+    margin: 20px 0px;
     text-align: center;
 }
 
@@ -178,29 +178,45 @@
     font-weight: 400;
 }
 
-.wwa {
+
+.map, .video {
     text-align: center;
     padding: 0;
 }
 
-.wwa iframe {
-    height: 600px;
+.video{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map iframe {
+    margin: -105px 0px;
+    height: 800px;
     width: 100%;
     pointer-events: none;
 }
 
-.wwa iframe.clicked{
+.map iframe.clicked{
     pointer-events: auto;
 }
 
-.wwa h3 {
+.map h3 {
     font-size: 28px;
     color: #2f2f2f;
     font-family: 'Roboto', 'sans-serif';
     font-weight: 400;
 }
 
-.wwa h4 {
+.map h4 {
     margin-top: 15px;
     font-size: 16px;
     color: #2f2f2f;
@@ -221,6 +237,9 @@
 }
 
 .footer {
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 999;
     padding: 20px 0px;
 }
 

@@ -8,6 +8,7 @@ categories: e-commerce
 description: Amazon.com é uma empresa transnacional de comércio electrónico.
 logo: "https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon.com-Logo.svg"
 founder-pic: "https://riverjangda.files.wordpress.com/2011/10/mf_amazon_f.jpg"
+video: https://www.youtube.com/embed/6nCRigQLndk
 facebook: https://www.facebook.com/Amazon
 instagram: https://www.instagram.com/amazon/
 twitter: https://twitter.com/amazon
