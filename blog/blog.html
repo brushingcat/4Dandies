@@ -29,10 +29,8 @@ paginate:
                         <!--<img src="{{post.header-img}}">-->
                         <div class="filter"></div>
                         <div class="actions">
-                            <a href="{{ post.url | prepend: site.baseurl }}">
-                                <button class="btn btn-round btn-fill btn-neutral btn-modern">
-                                    Read Article
-                                </button>
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-round btn-fill btn-neutral btn-modern">
+                                Read article
                             </a>
                         </div>
                     </div>
@@ -44,7 +42,7 @@ paginate:
                         <p class="description">{{post.subtitle}}<br><br></p>
                         <div class="keywords">
                             {% for tag in post.tags %}
-                            <h6 bgcolor="#050505" class="keyword">
+                            <h6 class="keyword">
                                 {{ tag }}
                             </h6>
                             {% endfor %}
