@@ -54,11 +54,11 @@
   align-self: flex-end;
 }
 
-.header .followus ul {
+.header .followus .social {
   padding: 0;
 }
 
-.header .followus ul i {
+.header .followus .social i {
   padding: 5px;
   font-size: 30px;
   height: 40px;
@@ -67,11 +67,11 @@
   color: #050505;
 }
 
-.header .followus ul a + a {
+.header .followus .social a + a {
   margin-left: 10px;
 }
 
-.header .followus ul a{
+.header .followus .social a{
   text-decoration: none!important;
   color: transparent;
 }
