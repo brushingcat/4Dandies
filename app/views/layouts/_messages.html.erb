@@ -8,7 +8,7 @@
             setTimeout( function() {
               // create the notification
               var notification = new NotificationFx({
-                message : '<div class="ns-thumb"><img src="https://avatars.slack-edge.com/2016-08-17/70213053360_942099ac0a3658a754b0_512.jpg" height="64" width="64"/></div><div class="ns-content"><p> <%= value %></p></div>',
+                message : '<div class="ns-thumb"><img src="<%= asset_path '4_logo@2x.png' %>" height="64" width="64"/></div><div class="ns-content"><p> <%= value %></p></div>',
                 layout : 'other',
                 ttl : 6000,
                 effect : 'thumbslider',

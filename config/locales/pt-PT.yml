@@ -16,6 +16,15 @@ pt-PT:
       visit: "Visitar"
       contact: "Contactar"
       see_more: "Ver mais"
+    header:
+      title: "Descobre Marcas, Segue Tendências"
+      sub_title: "Plataforma portuguesa para marcas & designers emergentes"
+    navbar:
+      home: "HOME"
+      blog: "BLOG"
+      brands: "MARCAS"
+      contact: "CONTACTO"
+      subscribe: "SUBSCREVE"
     footer:
       help: "Ajuda"
       privacy_policy: "Política de Privacidade"

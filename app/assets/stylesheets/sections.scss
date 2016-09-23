@@ -1,85 +1,85 @@
 .section h4 {
-    text-transform: uppercase;
-    font-size: 45px;
+  text-transform: uppercase;
+  font-size: 45px;
 }
 
 .section h4 + p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .section {
-    color: #050505;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    display: flex;
+  color: #050505;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
 }
 
-.section .left {
-    background-color: #ffffff;
-    padding: 0px 7% 0px 0px;
+
+.left {
+  background-color: #ffffff;
+  padding: 0px 7% 0px 0px;
 }
 
-.section .right {
-    background-color: #f7f7f7;
-    padding: 0px 0px 0px 7%;
+.right {
+  background-color: #f7f7f7;
+  padding: 0px 0px 0px 7%;
 }
 
 .section .container-fluid {
-    align-self: center;
+  align-self: center;
 }
-
 .section .info {
-    align-self: center;
+  align-self: center;
 }
 
 .action {
-    vertical-align: bottom;
-    text-align: right;
-    padding: 5% 0;
+  vertical-align: bottom;
+  text-align: right;
+  padding: 5% 0;
 }
 
 
 .section .img {
-    background-size: cover;
-    min-height: 45vh;
+  background-size: cover;
+  min-height: 45vh;
 }
 
 .blog .img {
-    background-image: image_url('blog-min.jpg');
+  background-image: image_url('blog-min.jpg');
 }
 
 .aboutus .img {
-    background-image: image_url('brands-min.jpeg');
+  background-image: image_url('brands-min.jpeg');
 }
 
 .wwwant .img {
-    background-image: image_url('team-min.jpg');
+  background-image: image_url('team-min.jpg');
 }
 
 .row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .brands #grid {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0px 7% 0px 0px;
-    align-self: center;
-    line-height: 5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px 7% 0px 0px;
+  align-self: center;
+  line-height: 5em;
 }
 
 .brands #grid ul {
-    text-align: center;
-    padding: 0px;
-    list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  list-style-type: none;
 }
 
 .brands #grid .action {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 
@@ -88,18 +88,18 @@
 /*Buttons*/
 
 .section .action .link{
-    font-weight: 700;
-    font-family: Quicksand;
-    font-size: 20px;
-    color: #050505!important;
-    text-decoration: none !important;
+  font-weight: 700;
+  font-family: Quicksand;
+  font-size: 20px;
+  color: #050505!important;
+  text-decoration: none !important;
 }
 
 .section .action .link:hover{
-    color: white !important;
-    background-color: #050505;
+  color: white !important;
+  background-color: #050505;
 }
 
 .section .action .link span{
-    font-size: 15px;
+  font-size: 15px;
 }

@@ -37,6 +37,15 @@ en:
       visit: "Visit"
       contact: "Contact"
       see_more: "See More"
+    header:
+      title: "Discover Brands, Follow Trends"
+      sub_title: "The portuguese platform for emergent fashion brands & designers"
+    navbar:
+      home: "HOME"
+      blog: "BLOG"
+      brands: "BRANDS"
+      contact: "CONTACT"
+      subscribe: "SUBSCRIBE"
     footer:
       help: "Help"
       privacy_policy: "Privacy Policy"

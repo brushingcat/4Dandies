@@ -14,15 +14,15 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="other_buttons">
-          <a href="<%= root_url %>">Home</a></li>
+          <a href="<%= root_url %>"><%= t('landing.navbar.home') %></a></li>
         <li class="other_buttons">
-          <a href="<%= blog_url %>">Blog</a></li>
+          <a href="<%= blog_url %>"><%= t('landing.navbar.blog') %></a></li>
         <li class="other_buttons">
-          <a href="<%= brands_url %>">Brands</a></li>
+          <a href="<%= brands_url %>"><%= t('landing.navbar.brands') %></a></li>
         <li class="other_buttons">
-          <a href="mailto:social@4dandies.com" target="_top">Contact</a></li>
+          <a href="mailto:social@4dandies.com" target="_top"><%= t('landing.navbar.contact') %></a></li>
         <li class="subscribe-button">
-          <a href="<%= new_user_registration_path %>">Subscribe</a></li>
+          <a href="<%= new_user_registration_path %>"><%= t('landing.navbar.subscribe') %></a></li>
       </ul>
     </div>
   </div>
