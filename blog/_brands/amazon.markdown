@@ -14,6 +14,7 @@ twitter: https://twitter.com/amazon
 pinterest: https://pt.pinterest.com/amazon/
 youtube: https://www.youtube.com/user/amazon
 google_plus: https://plus.google.com/+amazon
+map: 47.615144°N 122.338578°W
 ---
 
 Jeffrey Bezos, dono da Amazon.com, largou uma famosa empresa em Wall Street onde trabalhava quando, aos 30 anos, percebeu a evolução/revolução emergente da internet e imaginou um novo negócio que ainda ninguém tinha pensado.

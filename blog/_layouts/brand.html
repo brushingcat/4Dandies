@@ -60,23 +60,6 @@ layout: default
 </div>
 </div>
 
-<!--about start-->
-<div class="container">
-    <div class="row aboutUs">
-        <div class="col-md-12 ">
-            <h3>What Our Customers Say About Us?</h3>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 wwa">
-            <img class="img-responsive"
-                 src="{{ '/img/ams.jpg' | prepend: site.baseurl }}"/>
-        </div>
-    </div>
-</div>
-
 <!--contact start-->
 
 <div class="line7">
@@ -111,4 +94,24 @@ layout: default
         </div>
     </div>
 </div>
+
+<!--about start-->
+<div class="container">
+    <div class="row aboutUs">
+        <div class="col-md-12 ">
+            <h3>Visit</h3>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 wwa">
+            <iframe  width="100%" frameborder="0" style="border:0"
+                    src="{{ 'https://www.google.com/maps/embed/v1/place?key=AIzaSyCxHwbtkSpeGs5YZENhdf_wUikZZJEeKGM
+    &q=' | append: page.map}}" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
 </div>
