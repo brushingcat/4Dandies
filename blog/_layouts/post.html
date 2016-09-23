@@ -25,7 +25,7 @@ comments: true
             <div class="col-sm-2 post_author">
                 <div id="author" class="col-sm-12 avatar">
                     {% assign author = site.data.authors[page.author] %}
-                    <img class="" style="max-width: 110px; height: auto;" src="{{ author.img | prepend: site.baseurl }} ">
+                    <img class="" style="max-width: 110px; height: auto;" src="{{ author.img | prepend: site.baseurl }} " alt="Author Image">
                     <p style="width: 110px; border-bottom: 2px solid black;padding-bottom: 10px;">{{ author.name }}</p>
                     <p>Tags</p>
                     <div class="tags">

@@ -9,7 +9,8 @@ layout: default
                 <div class="col-md-6 gallery">
                     <!--<img class="img-responsive" src="{{ '/img/logo_bruna.png' | prepend: site.baseurl }}">
                     <!--img src="../img/logo_bruna.png"-->
-                    <img class="img-responsive" src="{{ page.logo }}">
+                    <img class="img-responsive" src="{{ page.logo }}"
+                         alt="Brand Logo">
                 </div>
                 <div class="col-md-6 gallery">
                     <h1>{{ page.name }}</h1>
@@ -22,18 +23,21 @@ layout: default
     <div class="row">
         <div class="col-md-4 project">
             <!--h3 id="counter">0</h3-->
-            <img src="{{ '/img/fundation.png' | prepend: site.baseurl }}">
+            <img src="{{ '/img/fundation.png' | prepend: site.baseurl }}"
+                 alt="Fundation Icon">
             <h4>{{ page.year }}</h4>
             <p>Ano de fundação. Informação adicional, caso necessário.</p>
         </div>
         <div class="col-md-4 project">
-            <img src="{{ '/img/house.png' | prepend: site.baseurl }}">
+            <img src="{{ '/img/house.png' | prepend: site.baseurl }}"
+                 alt="House Icon">
             <!--h3 id="counter1">0</h3-->
             <h4>{{ page.location }}</h4>
             <p>Sede, local de fundação.</p>
         </div>
         <div class="col-md-4 project">
-            <img src="{{ '/img/crown.png' | prepend: site.baseurl }}">
+            <img src="{{ '/img/crown.png' | prepend: site.baseurl }}"
+                 alt="Crown Icon">
             <!--h3 id="counter2" style="margin-left: 20px;">0</h3-->
             <h4 style="margin-left: 20px;">{{ page.founder }}</h4>
             <p>Fundador, criador, equipa. </p>
@@ -54,10 +58,10 @@ layout: default
             <p>{{ content }}</p>
         </div>
         <div class="col-md-6 centPic">
-            <img class="img-responsive" src="{{ page.founder-pic }}"/>
+            <img class="img-responsive" src="{{ page.founder-pic }}"
+                 alt="Founder Pic"/>
         </div>
     </div>
-</div>
 </div>
 
 <!--contact start-->
@@ -106,12 +110,10 @@ layout: default
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 wwa">
-            <iframe  width="100%" frameborder="0" style="border:0"
+            <iframe width="100%" frameborder="0" style="border:0"
                     src="{{ 'https://www.google.com/maps/embed/v1/place?key=AIzaSyCxHwbtkSpeGs5YZENhdf_wUikZZJEeKGM
     &q=' | append: page.map}}" allowfullscreen>
             </iframe>
         </div>
     </div>
-</div>
-
 </div>

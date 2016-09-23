@@ -8,7 +8,7 @@ layout: default
             <h1>O Mundo das Marcas Emergentes</h1>
         </div>
         <div class="row banner">
-            <img src="{{ '/img/banner.png' | prepend: site.baseurl }}" class="img-responsive">
+            <img src="{{ '/img/banner.png' | prepend: site.baseurl }}" alt="Banner Brands" class="img-responsive">
         </div>
     </div>
 </div>
@@ -20,8 +20,7 @@ layout: default
                 <li class="brand col-md-4 col-sm-6">
                     <a href="{{ brand.url | prepend: site.baseurl }}">
                         <div class="logoPic">
-                            <img class="img-responsive"
-                                 src="{{ brand.logo }}">
+                            <img class="img-responsive" alt="Logo Brand" src="{{ brand.logo }}">
                         </div>
                         <div class="brand-info">
                             <h2>{{ brand.name }}</h2>
