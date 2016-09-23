@@ -8,6 +8,12 @@ categories: e-commerce
 description: Amazon.com é uma empresa transnacional de comércio electrónico.
 logo: "https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon.com-Logo.svg"
 founder-pic: "https://riverjangda.files.wordpress.com/2011/10/mf_amazon_f.jpg"
+facebook: https://www.facebook.com/Amazon
+instagram: https://www.instagram.com/amazon/
+twitter: https://twitter.com/amazon
+pinterest: https://pt.pinterest.com/amazon/
+youtube: https://www.youtube.com/user/amazon
+google_plus: https://plus.google.com/+amazon
 ---
 
 Jeffrey Bezos, dono da Amazon.com, largou uma famosa empresa em Wall Street onde trabalhava quando, aos 30 anos, percebeu a evolução/revolução emergente da internet e imaginou um novo negócio que ainda ninguém tinha pensado.
