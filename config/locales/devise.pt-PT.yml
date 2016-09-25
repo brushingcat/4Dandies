@@ -1,6 +1,6 @@
 # European Portuguese translations for devise
 
-"pt-PT":
+pt:
   errors:
     format: "%{message}"
     messages:

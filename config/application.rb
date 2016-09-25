@@ -16,7 +16,7 @@ module Landing
 
     #RoutingFilter::Locale.include_default_locale = false
 
-    config.i18n.available_locales = %w(en pt-PT)
+    config.i18n.available_locales = %w(en pt)
     config.i18n.default_locale= 'en'
 
     config.active_job.queue_adapter = :sidekiq
