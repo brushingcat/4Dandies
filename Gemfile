@@ -66,7 +66,7 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
 gem 'omniauth-instagram'
 gem 'codecov', :require => false, :group => :test
-gem 'routing-filter'
+#gem 'routing-filter'
 gem 'http_accept_language'
 gem 'frontend-generators'
 gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'

@@ -224,9 +224,6 @@ GEM
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     rouge (1.11.1)
-    routing-filter (0.6.0)
-      actionpack (>= 4.2, < 5.1)
-      activesupport (>= 4.2, < 5.1)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -331,7 +328,6 @@ DEPENDENCIES
   pg (= 0.18.4)
   puma (~> 3.0)
   rails (~> 5.0.0)
-  routing-filter
   rspec
   rspec-rails
   sass-rails (~> 5.0)

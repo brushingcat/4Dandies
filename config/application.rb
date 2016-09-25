@@ -14,7 +14,7 @@ module Landing
     # Do not include default locale in generated URLs
     config.middleware.use Rack::Deflater
 
-    RoutingFilter::Locale.include_default_locale = false
+    #RoutingFilter::Locale.include_default_locale = false
 
     config.i18n.available_locales = %w(en pt-PT)
     config.i18n.default_locale= 'en'
