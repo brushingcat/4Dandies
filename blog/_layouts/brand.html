@@ -19,8 +19,7 @@ layout: default
         </div>
     </div>
 </div>
-<div class="container"
-     style="position: relative;background-color: #fafafa; z-index: 999;">
+<div class="container">
     <div class="row">
         <div class="col-md-4 project">
             <!--h3 id="counter">0</h3-->
@@ -49,11 +48,48 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="col-md-12 video">
-            {% assign opt= "?modestbranding=1&autohide=1&fs=0" %}
-            <iframe width="100%" frameborder="0" style="border:0"
-                    src="{{ page.video | append: opt }}" allowfullscreen>
-            </iframe>
+            <div class="video-screenshot">
+                <img class="img-responsive"
+                     src="{{ 'https://img.youtube.com/vi/' | append: page.video | append: '/maxresdefault.jpg' }}"/>
+                <a id="video-play"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            {% assign opt= "?enablejsapi=1&modestbranding=1&autohide=1" %}
+            <div class="youtube-video">
+                <iframe id="player" width="100%" frameborder="0" style="border:0"
+                        src="{{ 'https://www.youtube.com/embed/' | append: page.video | append: opt }}"
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>
+        <script>
+            var tag = document.createElement('script');
+            tag.src = 'https://www.youtube.com/iframe_api';
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+
+            function onPlayerReady(event){
+                $('#video-play').click(function () {
+                    document.getElementById("player").style.zIndex = "1";
+                    player.playVideo();
+                });
+            }
+            function onPlayerStateChange(event) {
+                /*  if(event.data === 0) {
+                    document.getElementById("player").style.zIndex = "-1";
+                }*/
+            }
+        </script>
     </div>
 </div>
 {% endif %}
