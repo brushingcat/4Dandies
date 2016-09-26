@@ -82,11 +82,13 @@
 
 .header .followus #arrow{
   margin: 30px 0px 0px 0px;
+  opacity: 1;
+  font-size: 25px;
 }
 
-.header .followus #arrow i{
-  opacity: 0.3;
-  font-size: 25px;
+.header .followus #arrow a{
+  color: #050505!important;
+  text-decoration: none;
 }
 
 
