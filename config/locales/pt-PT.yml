@@ -8,10 +8,17 @@ pt:
       blog: "Blog"
       brands: "Marcas"
     texts:
-      about_us: ""
-      team: ""
-      blog: ""
-      brands: ""
+      about_us:
+        html: "4DANDIES procura juntar numa plataforma online marcas e designers emergentes nacionais.<br/> Aqui poderá encontrar artigos exclusivos de criadores emergentes que prometem destacar-se no mundo da moda nacional e internacional."
+      team:
+        html: "Atrás do 4Dandies está uma equipa de jovens independentes e movidos pela paixão da moda. Acreditamos num mundo mais próspero onde mais marcas emergem como solução às gigantes superproduções. <br/>Acreditamos que os estilos e personalidades se traduzem na moda e que cada um é diferente e único, por isso trabalhamos arduamente com a missão de causar impacto no mundo da moda, apoiando os novos criadores que se lançam no nosso mercado."
+      blog:
+        html: "No nosso Blog teremos um espaço reservado e totalmente dedicado às marcas e ao setor da moda. Pretendemos contar as histórias que nos permitirão dizer o que nos vai no coração. As histórias que levaram à criação das marcas e que nos permite mostrar a autenticidade do trabalho que dedicamos a projeto.<br/>
+                           Daremos a conhecer marcas e designers emergentes com histórias por contar. A conhecer pelo que presentam ou pelas pessoas que lhes deram origem."
+      brands:
+        html: "Criadores, marcas e designers portugueses, emergentes no setor da moda e que pretendem chegar mais longe com os seus projetos.<br/>
+                           Exclusividade, qualidade e autenticidade serão os atributos que nos permitirão selecionar os produtos a trazer a este Marketplace.<br/>
+                           Acreditamos que a diferença está nos pequenos detalhes e por isso queremos apoiar estes projetos emergentes que demonstram o que de melhor temos a nível nacional, levar o que é nosso por natureza ao mundo. Conquistar novos e mais palcos."
     buttons:
       visit: "Visitar"
       contact: "Contactar"
@@ -30,3 +37,9 @@ pt:
       privacy_policy: "Política de Privacidade"
       email_us: "Fala Connosco"
       terms:  "Termos"
+      blog:
+        html: "At 4Dandies we look to introduce great emerging brands and designers.</br> At 4U we look to tell their stories."
+      be_first: "Be the first to know about more about us and products."
+      sign_up: "Sign up for email storytelling"
+  subscribe:
+    join_community: "Junta-te a nossa comunidade"
