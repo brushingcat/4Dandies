@@ -1,0 +1,32 @@
+ru:
+  name: "Имя"
+  landing:
+    titles:
+      follow_us: "Присоединяйтесь к нам"
+      about_us: "О Проекте"
+      team: "Команда"
+      blog: "Блог"
+      brands: "Бренды"
+    texts:
+      about_us: ""
+      team: ""
+      blog: ""
+      brands: ""
+    buttons:
+      visit: "Посетить"
+      contact: "Связаться с нами"
+      see_more: "Смотреть еще"
+    header:
+      title: "Новые Бренды, Новые Тенденции"
+      sub_title: "Португальский сайт для развивающейся брендов и дизайнеров"
+    navbar:
+      home: "ГЛАВНАЯ"
+      blog: "БЛОГ"
+      brands: "БРЕНДЫ"
+      contact: "СВЯЗАТЬСЯ"
+      subscribe: "ПОДПИСКА"
+    footer:
+      help: "Помощь"
+      privacy_policy: "Политика конфиденциальности"
+      email_us: "Связаться с нами"
+      terms:  "Условия пользования"
