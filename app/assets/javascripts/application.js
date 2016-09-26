@@ -16,9 +16,9 @@
 //= require turbolinks
 //= require_tree .
 
-var url=window.location.href+"#";
+var url = window.location.href + "#";
 
-$(document).on('turbolinks:load', function() {
+$(document).on('turbolinks:load', function () {
     //Nav animation
     $(window).scroll(function () {
         if ($(".navbar").offset().top > 50) {
@@ -30,23 +30,23 @@ $(document).on('turbolinks:load', function() {
     });
 
     //Carousel animation
-    $('#carousel-demo1').scrollingCarousel( {
+    $('#carousel-demo1').scrollingCarousel({
         autoScroll: true,
         autoScrollSpeed: '20000'
     });
 
     //scroll animation
-    $('a[href^=url]').on('click',function (e) {
-        e.preventDefault();
-        window.location.hostname
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 900);
+                return false;
+            }
+        }
     });
 });
 
