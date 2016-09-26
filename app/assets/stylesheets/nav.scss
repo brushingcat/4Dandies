@@ -23,28 +23,31 @@
   box-shadow: none;
 }
 
-.navbar-brand{
-  position: absolute;
-  height: 100%;
+.navbar-brand {
+  min-height: 50px;
   padding: 0px;
+}
+
+.top-nav-collapse .navbar-brand {
+  min-height: 55px;
 }
 
 .top-nav-collapse .navbar-brand #img {
   height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
   background-image: image_url('4_logo@2x.png');
 }
 
 .navbar-brand #img {
-  width: 200px;
   height: 100%;
+  width: 200px;
   background-image: image_url('logo_preto-100.png');
   background-size: contain;
   background-repeat: no-repeat;
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative;
-}
 
+}
 
 .top-nav-collapse .navbar-nav {
   margin: 7.5px -15px 7.5px 0px !important;
@@ -53,11 +56,6 @@
 .top-nav-collapse .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.navbar-header {
-  position: absolute;
-  height: 100%;
 }
 
 .navbar-default .nav li a {
@@ -120,7 +118,7 @@
   border-color: #050505;
 }
 
-.collapse.in ul, .collapsing ul{
+.collapse.in ul, .collapsing ul {
   max-width: 250px;
   padding-right: 10px;
   float: right;
