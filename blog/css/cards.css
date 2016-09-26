@@ -292,16 +292,20 @@
 }
 
 
-.card .keywords{
+.keywords{
     text-align:center;
     color:white;
+    overflow: auto;
 }
 
-.card .keywords>h6{
+.keywords>h6, .keywords>a{
     background-color: #050505;
     float: left;
     padding: 4px;
     font-size: 12px;
     margin-right: 5px;
     margin-bottom: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
 }
