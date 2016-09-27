@@ -1,43 +1,40 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid" style="padding: 5px 10%;">
     <div class="navbar-header">
-      <a class="navbar-brand" href="<%= root_url %>">
-        <div id="img"></div>
-      </a>
-      <div class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          <i class="flag <%= I18n.locale %>"></i>
-          <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <% I18n.available_locales.each do |lang| %>
-              <% if lang!=I18n.locale %>
-                  <li><a href="<%= url_for(:locale => lang) %>"><i class="flag <%= lang %>"></i></a></li>
-              <% end %>
-          <% end %>
-        </ul>
-      </div>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a class="navbar-brand" href="<%= root_url %>">
+        <img class="img-responsive" />
+      </a>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="other_buttons">
-          <a href="<%= root_url %>"><%= t('landing.navbar.home') %></a></li>
-        <li class="other_buttons">
-          <a href="<%= blog_url %>"><%= t('landing.navbar.blog') %></a></li>
-        <li class="other_buttons">
-          <a href="<%= brands_url %>"><%= t('landing.navbar.brands') %></a></li>
-        <li class="other_buttons">
-          <a href="mailto:social@4dandies.com" target="_top"><%= t('landing.navbar.contact') %></a></li>
-        <li class="subscribe-button">
-          <a href="<%= new_user_registration_path %>"><%= t('landing.navbar.subscribe') %></a></li>
-
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="flag <%= I18n.locale %>"></i>
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <% I18n.available_locales.each do |lang| %>
+                <% if lang!=I18n.locale %>
+                    <li><a href="<%= url_for(:locale => lang) %>"><i class="flag <%= lang %>"></i></a></li>
+                <% end %>
+            <% end %>
+          </ul>
+        </li>
       </ul>
-          </div>
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+        <li><a href="<%= root_url %>"><%= t('landing.navbar.home') %></a></li></li>
+        <li><a href="<%= blog_url %>"><%= t('landing.navbar.blog') %></a></li></li>
+        <li><a href="<%= brands_url %>"><%= t('landing.navbar.brands') %></a></li>
+        <li><a href="mailto:social@4dandies.com" target="_top"><%= t('landing.navbar.contact') %></a></li>
+        <li><a class="subscribe-button" href="<%= new_user_registration_path %>"><%= t('landing.navbar.subscribe') %></a></li>
+      </ul>
+    </div>
   </div>
 </nav>
+
+

@@ -1,28 +1,32 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid" style="padding: 5px 10%;">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">
-                <div id="img"></div>
-            </a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="/">
+                <img class="img-responsive" />
+            </a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="other_buttons">
-                    <a href="/">Home</a></li>
-                <li class="other_buttons">
-                    <a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
-                <li class="other_buttons">
-                    <a href="{{ '/brands' | prepend: site.baseurl }}">Marcas</a></li>
-                <li class="other_buttons">
-                    <a href="mailto:social@4dandies.com" target="_top">Contacto</a></li>
-                <li class="subscribe-button">
-                    <a href="{{ '/subscribe' | prepend: site.baseurl }}">Subscreve</a></li>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+               <!-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        PT<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+                <li><a href="/">Home</a></li>
+                <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
+                <li><a href="{{ '/brands' | prepend: site.baseurl }}">Marcas</a></li>
+                <li><a href="mailto:social@4dandies.com" target="_top">Contacto</a></li>
+                <li><a class="subscribe-button" href="{{ '/subscribe' | prepend: site.baseurl }}">Subscreve</a></li>
             </ul>
         </div>
     </div>

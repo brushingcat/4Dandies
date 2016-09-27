@@ -1,17 +1,8 @@
-/*nav*/
-
 .navbar {
   padding: 20px 0;
   -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
   transition: background .5s ease-in-out, padding .5s ease-in-out;
-}
-
-.top-nav-collapse {
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  border-bottom: 1px solid #f2f2f2;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22) !important;
 }
 
 .navbar-default {
@@ -24,79 +15,46 @@
 }
 
 .navbar-brand {
-  min-height: 50px;
-  padding: 0px;
+  padding: 0;
 }
 
-.top-nav-collapse .navbar-brand {
-  min-height: 55px;
+.navbar-brand>img {
+  height: inherit;
+  content: image_url('logo_preto-100.png');
 }
 
-.top-nav-collapse .navbar-brand #img {
-  height: 70%;
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative;
-  background-image: image_url('4_logo@2x.png');
-}
 
-.navbar-brand #img {
-  height: 100%;
-  width: 200px;
-  background-image: image_url('logo_preto-100.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+/** LIST ITEMS IN NAVBAR **/
 
-}
-
-.top-nav-collapse .navbar-nav {
-  margin: 7.5px -15px 7.5px 0px !important;
-}
-
-.top-nav-collapse .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.navbar-default .nav li a {
+.navbar-default .navbar-nav>li>a {
+  color: #050505;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #050505;
 }
 
-.navbar-default .nav li.other_buttons:hover {
-  background-color: #050505 !important;
+.navbar-default .navbar-nav>li>a:hover {
+  color: white;
+  background-color: #050505;
 }
 
-.navbar-default .nav li.other_buttons:hover a {
-  color: white !important;
-}
-
-.navbar-default .nav li.subscribe-button {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+.navbar-default .navbar-nav li .subscribe-button {
   outline: solid 1px #28c891;
 }
 
-.navbar-default .nav li.subscribe-button a {
+.navbar-default .navbar-nav li .subscribe-button {
+  outline: solid 1px #28c891;
   color: #28c891;
 }
 
-.navbar-default .nav li.subscribe-button:hover {
+.navbar-default .navbar-nav li .subscribe-button:hover {
   background-color: #28c891;
+  color: white;
 }
 
-.navbar-default .nav li.subscribe-button:hover a {
-  color: #FFFFFF;
-}
 
-.navbar-default .container {
-  width: inherit;
-  margin: 0 10%;
-}
+/** TOOGLE BUTTON **/
 
 .navbar-default .navbar-toggle {
   border-color: transparent;
@@ -106,72 +64,55 @@
   background-color: #050505;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
   background-color: #050505;
 }
 
-.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
   background-color: white;
 }
 
-.navbar-default .navbar-collapse {
-  border-color: #050505;
-}
 
-.navbar-header {
+/** LISTS INSIDE TOGGLE BUTTON **/
+
+.collapse.in,
+.collapsing {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.top-nav-collapse .navbar-brand{
-  width: 50px;
-}
-
-nav button{
-  margin-left: auto;
-}
-
-.collapse.in ul, .collapsing ul {
-  max-width: 250px;
+.collapse.in ul,
+.collapsing ul {
   padding-right: 10px;
-  float: right;
   text-align: right;
 }
 
 
-.flag {
-  display: inline-block;
-  width: 16px;
-  height: 11px;
-  line-height: 11px;
-  background-image: image_url('flags.png' );
-  background-position: 0 0;
-  background-repeat: no-repeat;
+/** TOP NAV COLLAPSSE **/
+.top-nav-collapse {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22) !important;
 }
 
-.flag ::after {
-  content: 'Português';
+.top-nav-collapse .navbar-brand {
+  height: 40px;
 }
 
-.pt {
-  background-position: -16px -99px;
-  width: 16px;
-  height: 11px;
+.top-nav-collapse .navbar-brand>img {
+  content: image_url('4_logo@2x.png');
 }
 
-.en {
-  background-position: -16px -44px;
-  width: 16px;
-  height: 11px;
+.top-nav-collapse .navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.ru {
-  background-position: -32px -88px;
-  width: 16px;
-  height: 11px;
-}
-
-
+/** Dropdown menu to select language **/
 .dropdown-menu > li > a {
   /*     border-bottom: 1px solid #DDDDDD; */
   padding: 6px 15px;
@@ -204,7 +145,6 @@ nav button{
 .dropdown-menu{
   min-width: 62px !important;
   margin-top: 15px !important;
-  margin-left: calc( -50% - 8px );
   border: 1px solid rgba(0, 0, 0, 0.3) !important;
   background-color: rgba(255, 255, 255, 0.9) !important;
 }
@@ -219,6 +159,13 @@ nav button{
   text-decoration: none !important;
 }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}
+
+.dropdown a:hover {
+  background-color: transparent!important;
+}
 .dropdown-menu a {
   text-align: center;
 }
@@ -245,4 +192,34 @@ nav button{
   margin-left: -41px;
   top: -10px;
 }
+
+/** Flags for language **/
+.flag {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  line-height: 11px;
+  background-image: image_url('flags.png' );
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.pt {
+  background-position: -16px -99px;
+  width: 16px;
+  height: 11px;
+}
+
+.en {
+  background-position: -16px -44px;
+  width: 16px;
+  height: 11px;
+}
+
+.ru {
+  background-position: -32px -88px;
+  width: 16px;
+  height: 11px;
+}
+
 
