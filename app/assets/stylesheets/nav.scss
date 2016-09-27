@@ -18,9 +18,12 @@
   padding: 0;
 }
 
-.navbar-brand > img {
+.navbar-brand .img {
   height: inherit;
-  content: image_url('logo_preto-100.png');
+  width: 215px;
+  background-image: image_url('logo_preto-100.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /** LIST ITEMS IN NAVBAR **/
@@ -110,8 +113,10 @@
   height: 40px;
 }
 
-.top-nav-collapse .navbar-brand > img {
-  content: image_url('4_logo@2x.png');
+.top-nav-collapse .navbar-brand .img {
+  height: inherit;
+  width: 40px;
+  background-image: image_url('4_logo@2x.png');
 }
 
 .top-nav-collapse .navbar-nav > li > a {
