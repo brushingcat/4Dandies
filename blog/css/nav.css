@@ -77,6 +77,15 @@
 
 /** LISTS INSIDE TOGGLE BUTTON **/
 
+.navbar-default .navbar-collapse{
+    border-color: #050505;
+}
+
+.top-nav-collapse .collapse.in,
+.top-nav-collapse .collapsing {
+    background-color: transparent!important;
+}
+
 .collapse.in,
 .collapsing {
     display: flex;
