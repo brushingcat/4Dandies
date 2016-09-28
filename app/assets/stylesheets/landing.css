@@ -26,13 +26,13 @@
 body {
     background-color: #f7f7f7;
     padding-right:0px !important;
-    margin-right:0px !important;
     max-width: 100%;
     width: 100%;
     min-width: 100%;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    margin: 0px 0px 300px !important;
 }
 
 body.modal-open {
