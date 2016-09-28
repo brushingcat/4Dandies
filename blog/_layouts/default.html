@@ -22,65 +22,6 @@
                 $(".navbar-fixed-top").removeClass("top-nav-collapse");
             }
         });
-        if ($('#social_buttons').length)
-        {
-            $(function() {
-                var dist_top_changed=20000;
-
-                $(window).resize(
-                        function ()
-                        {
-                            dist_top_changed=2000;
-
-                            var elementOffset = $('#social_buttons').offset().top;
-
-                            $('#social_buttons').css({
-                                top: '0px',
-                                position: 'relative',
-                                left: '0px'
-                            });
-
-                            if(elementOffset < dist_top_changed) {
-                                dist_top_changed = elementOffset;
-                                $('#social_buttons').css({
-                                    position: 'fixed',
-                                    top: '400px',
-                                    left: $('#social_buttons').offset().left
-                                });
-                            }
-                        }
-                );
-
-                $(window).scroll(function() {
-
-                    var scrollTop     = $(window).scrollTop(),
-                            elementOffset = $('#social_buttons').offset().top,
-                            distance      = (elementOffset - scrollTop);
-
-                    if (distance < 400) {
-                        dist_top_changed = elementOffset;
-                        $('#social_buttons').css({
-                            position: 'fixed',
-                            top: '400px',
-                            left: $('#social_buttons').offset().left
-                        });
-
-                    } else {
-                        if(elementOffset < dist_top_changed) {
-                            $('#social_buttons').css({
-                                top: '0px',
-                                position: 'relative',
-                                left: '0px'
-                            });
-                        }
-                    }
-
-
-
-                });
-            });
-        }
-
     </script>
 </body>
 {% include footer.html %}

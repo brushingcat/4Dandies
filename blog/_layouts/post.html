@@ -3,8 +3,9 @@ layout: default
 comments: true
 ---
 
-<div class="header" style="background: url('{{ page.img |  prepend: site.baseurl }}') center no-repeat;">
-   <!-- <img src="{{ page.img |  prepend: site.baseurl }}" />-->
+<div class="header"
+     style="background: url('{{ page.img |  prepend: site.baseurl }}') center no-repeat;">
+    <!-- <img src="{{ page.img |  prepend: site.baseurl }}" />-->
 </div>
 
 
@@ -21,73 +22,146 @@ comments: true
 </div>
 <div class="post_body">
     <div class="container">
-        <div class="row row-eq-height">
+        <div class="row">
             <div class="col-sm-2 post_author">
                 <div id="author" class="col-sm-12 avatar">
                     {% assign author = site.data.authors[page.author] %}
-                    <img class="" style="max-width: 110px; height: auto;" src="{{ author.img | prepend: site.baseurl }} " alt="Author Image">
+                    <img class="" style="max-width: 110px; height: auto;"
+                         src="{{ author.img | prepend: site.baseurl }} "
+                         alt="Author Image">
                     <p style="width: 110px;">{{ author.name }}</p>
                 </div>
             </div>
             <div class="col-sm-8 post_content">
-              {{ content }}
+                {{ content }}
                 <div class="keywords">
                     {% for tag in page.tags %}
-                        <a href="/tag/{{ tag }}">{{ tag }}</a>
+                    <a href="/tag/{{ tag }}">{{ tag }}</a>
                     {% endfor %}
                 </div>
                 <div class="PageNavigation">
                     {% if page.previous.url %}
-                    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+                    <a class="prev" href="{{page.previous.url}}">&laquo;
+                        {{page.previous.title}}</a>
                     {% endif %}
                     {% if page.next.url %}
-                    <a class="next" style="float: right;" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+                    <a class="next" style="float: right;"
+                       href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
                     {% endif %}
                 </div>
-                <div id="disqus_thread"></div>
-                <script>
-
-                    /**
-                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
-                    /*
-                     var disqus_config = function () {
-                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                     };
-                     */
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = '//4dandies.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </div>
             <div class="col-sm-2 post_share">
                 <ul id="social_buttons" class="social_buttons">
-                    <a class="fa fa-facebook hvr-grow" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;" title="Facebook"></a>
-                    <a class="fa fa-pinterest hvr-grow" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;" title="Pinterest"></a>
-                    <a class="fa fa-twitter hvr-grow" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;" title="Twitter"></a>
-                    <a class="fa fa-google-plus-square hvr-grow" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;" title="Google-Plus"></a>
+                    <a class="fa fa-facebook hvr-grow"
+                       onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;"
+                       title="Facebook"></a>
+                    <a class="fa fa-pinterest hvr-grow"
+                       onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;"
+                       title="Pinterest"></a>
+                    <a class="fa fa-twitter hvr-grow"
+                       onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;"
+                       title="Twitter"></a>
+                    <a class="fa fa-google-plus-square hvr-grow"
+                       onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=660,top=190,width=600,height=600'); return false;"
+                       title="Google-Plus"></a>
                 </ul>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2" id="disqus_thread"></div>
+            <script>
+
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+                /*
+                 var disqus_config = function () {
+                 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                 };
+                 */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = '//4dandies.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a
+                    href="https://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
         </div>
     </div>
 </div>
 
 <script>
-    var facebook = document.getElementsByClassName("fa-facebook")[0];
-    facebook.setAttribute("href","https://www.facebook.com/sharer/sharer.php?u="+window.location.href );
+    $(document).ready(function () {
+        var facebook = document.getElementsByClassName("fa-facebook")[0];
+        facebook.setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href);
 
-    var twitter = document.getElementsByClassName("fa-twitter")[0];
-    twitter.setAttribute("href","https://twitter.com/intent/tweet?url="+window.location.href );
+        var twitter = document.getElementsByClassName("fa-twitter")[0];
+        twitter.setAttribute("href", "https://twitter.com/intent/tweet?url=" + window.location.href);
 
-    var google = document.getElementsByClassName("fa-google-plus-square")[0];
-    google.setAttribute("href","https://plus.google.com/share?url="+window.location.href );
+        var google = document.getElementsByClassName("fa-google-plus-square")[0];
+        google.setAttribute("href", "https://plus.google.com/share?url=" + window.location.href);
 
-    var pinterest = document.getElementsByClassName("fa-pinterest")[0];
-    pinterest.setAttribute("href","http://pinterest.com/pin/create/button/?url="+window.location.href );
+        var pinterest = document.getElementsByClassName("fa-pinterest")[0];
+        pinterest.setAttribute("href", "http://pinterest.com/pin/create/button/?url=" + window.location.href);
 
+        $(function () {
+            if ($(window).width() > 768) {
+                var dist_top_changed = 20000;
+
+                $(window).resize(
+                        function () {
+                            dist_top_changed = 2000;
+
+                            var elementOffset = $('#social_buttons').offset().top;
+
+                            $('#social_buttons').css({
+                                top: '0px',
+                                position: 'relative',
+                                left: '0px'
+                            });
+
+                            if (elementOffset < dist_top_changed) {
+                                dist_top_changed = elementOffset;
+                                $('#social_buttons').css({
+                                    position: 'fixed',
+                                    top: '400px',
+                                    left: $('#social_buttons').offset().left
+                                });
+                            }
+                        }
+                );
+
+                $(window).scroll(function () {
+
+                    var scrollTop = $(window).scrollTop(),
+                            elementOffset = $('#social_buttons').offset().top,
+                            distance = (elementOffset - scrollTop);
+
+                    if (distance < 400) {
+                        dist_top_changed = elementOffset;
+                        $('#social_buttons').css({
+                            position: 'fixed',
+                            top: '400px',
+                            left: $('#social_buttons').offset().left
+                        });
+
+                    } else {
+                        if (elementOffset < dist_top_changed) {
+                            $('#social_buttons').css({
+                                top: '0px',
+                                position: 'relative',
+                                left: '0px'
+                            });
+                        }
+                    }
+
+
+                });
+            }
+        });
+    });
 </script>
