@@ -29,9 +29,7 @@ body {
     max-width: 100%;
     width: 100%;
     min-width: 100%;
-    display: flex;
     min-height: 100vh;
-    flex-direction: column;
 }
 
 body.modal-open {
@@ -41,6 +39,7 @@ body.modal-open {
 body.modal-open .modal{
     display: flex!important;
     align-items: center;
+    justify-content: center;
 }
 
 #myModal{
