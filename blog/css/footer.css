@@ -43,6 +43,11 @@ footer {
     background-image: url('/img/footer.png');
     background-size: 800px;
     background-color: #050505;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
 }
 
 footer .row-info {
