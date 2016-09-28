@@ -284,4 +284,12 @@
   .collapse.in{
     display: flex !important;
   }
+
+  .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 0px !important;
+  }
+
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 340px !important;
+  }
 }
