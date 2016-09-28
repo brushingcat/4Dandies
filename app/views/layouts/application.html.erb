@@ -4,8 +4,8 @@
   <title><%= yield(:title) %> | 4DANDIES</title>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand:400">
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'application', defer: Rails.env.production?, media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', defer: Rails.env.production?, 'data-turbolinks-track': 'reload' %>
   <%= render 'shim' %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
