@@ -11,14 +11,11 @@ pt:
       about_us:
         html: "4DANDIES procura juntar numa plataforma online marcas e designers emergentes nacionais.<br/> Aqui poderá encontrar artigos exclusivos de criadores emergentes que prometem destacar-se no mundo da moda nacional e internacional."
       team:
-        html: "Atrás do 4Dandies está uma equipa de jovens independentes e movidos pela paixão da moda. Acreditamos num mundo mais próspero onde mais marcas emergem como solução às gigantes superproduções. <br/>Acreditamos que os estilos e personalidades se traduzem na moda e que cada um é diferente e único, por isso trabalhamos arduamente com a missão de causar impacto no mundo da moda, apoiando os novos criadores que se lançam no nosso mercado."
+        html: "Atrás do 4Dandies está uma equipa jovem e motivada que acredita que as personalidades se traduzem na moda e que cada um é único. Por isso trabalhamos com a missão de dar a conhecer os talentos da moda nacional para que cada pessoa encontre a sua marca de eleição, única e exclusiva."
       blog:
-        html: "No nosso Blog teremos um espaço reservado e totalmente dedicado às marcas e ao setor da moda. Pretendemos contar as histórias que nos permitirão dizer o que nos vai no coração. As histórias que levaram à criação das marcas e que nos permite mostrar a autenticidade do trabalho que dedicamos a projeto.<br/>
-                           Daremos a conhecer marcas e designers emergentes com histórias por contar. A conhecer pelo que presentam ou pelas pessoas que lhes deram origem."
+        html: "Com o blog 4u, nós contamos histórias das pessoas apaixonadas por moda, das que a criam e das que a seguem. Conheça de perto as marcas e designers emergentes e fique a par das últimas novidades."
       brands:
-        html: "Criadores, marcas e designers portugueses, emergentes no setor da moda e que pretendem chegar mais longe com os seus projetos.<br/>
-                           Exclusividade, qualidade e autenticidade serão os atributos que nos permitirão selecionar os produtos a trazer a este Marketplace.<br/>
-                           Acreditamos que a diferença está nos pequenos detalhes e por isso queremos apoiar estes projetos emergentes que demonstram o que de melhor temos a nível nacional, levar o que é nosso por natureza ao mundo. Conquistar novos e mais palcos."
+        html: "Acreditamos que a diferença está nos pequenos detalhes e por isso apoiamos projetos emergentes no setor de moda que demonstram o que de melhor temos a nível nacional. Procuramos selecionar cuidadosamente os melhores produtos dos mais talentosos criadores e designers portugueses."
     buttons:
       visit: "Visitar"
       contact: "Contactar"
