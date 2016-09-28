@@ -11,25 +11,34 @@
   color: #050505;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
-  text-align: justify;
 }
 
+.vertical-align {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
 
 .left {
   background-color: #ffffff;
-  padding: 0px 7% 0px 0px;
 }
 
 .right {
   background-color: #f7f7f7;
-  padding: 0px 0px 0px 7%;
 }
 
-.section .container-fluid {
-  align-self: center;
+@media(max-width: 767px) {
+  .info {
+    text-align: center !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
-.section .info {
-  align-self: center;
+
+.info > .row {
+  padding: 0px 7%;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 .action {
@@ -37,7 +46,6 @@
   text-align: right;
   padding: 5% 0;
 }
-
 
 .section .img {
   background-size: cover;
@@ -54,13 +62,6 @@
 
 .wwwant .img {
   background-image: image_url('team-min.jpg');
-}
-
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .brands #grid {
@@ -81,24 +82,25 @@
   padding-top: 0;
 }
 
+.info {
 
-
+}
 
 /*Buttons*/
 
-.section .action .link{
+.section .action .link {
   font-weight: 700;
   font-family: Quicksand;
   font-size: 20px;
-  color: #050505!important;
+  color: #050505 !important;
   text-decoration: none !important;
 }
 
-.section .action .link:hover{
+.section .action .link:hover {
   color: white !important;
   background-color: #050505;
 }
 
-.section .action .link span{
+.section .action .link span {
   font-size: 15px;
 }
