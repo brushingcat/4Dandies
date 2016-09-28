@@ -55,7 +55,14 @@
     margin: 15px 0px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
+
+.post_body .post_author img {
+    max-width: 100%;
+    max-height: 100px;
+}
+
 
 .post_body .post_share ul {
     padding: 0;
@@ -80,6 +87,9 @@
 @media (max-width: 767px) {
     .post_body .post_share ul a{
         display: inline-block;
+    }
+    .post_body .post_share {
+        width: 100%;
     }
 }
 .tags {

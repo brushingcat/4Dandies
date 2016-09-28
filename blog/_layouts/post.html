@@ -26,10 +26,9 @@ comments: true
             <div class="col-sm-2 post_author">
                 <div id="author" class="col-sm-12 avatar">
                     {% assign author = site.data.authors[page.author] %}
-                    <img class="" style="max-width: 110px; height: auto;"
-                         src="{{ author.img | prepend: site.baseurl }} "
+                    <img src="{{ author.img | prepend: site.baseurl }} "
                          alt="Author Image">
-                    <p style="width: 110px;">{{ author.name }}</p>
+                    <p> {{ author.name }}</p>
                 </div>
             </div>
             <div class="col-sm-8 post_content">
@@ -109,59 +108,60 @@ comments: true
         pinterest.setAttribute("href", "http://pinterest.com/pin/create/button/?url=" + window.location.href);
 
         $(function () {
-            if ($(window).width() > 767) {
+
                 var dist_top_changed = 20000;
 
                 $(window).resize(
                         function () {
-                            dist_top_changed = 2000;
-
-                            var elementOffset = $('#social_buttons').offset().top;
-
                             $('#social_buttons').css({
                                 top: '0px',
                                 position: 'relative',
                                 left: '0px'
                             });
+                            if ($(window).width() > 767) {
+                                dist_top_changed = 2000;
 
-                            if (elementOffset < dist_top_changed) {
-                                dist_top_changed = elementOffset;
-                                $('#social_buttons').css({
-                                    position: 'fixed',
-                                    top: '400px',
-                                    left: $('#social_buttons').offset().left
-                                });
+                                var elementOffset = $('#social_buttons').offset().top;
+
+                                if (elementOffset < dist_top_changed) {
+                                    dist_top_changed = elementOffset;
+                                    $('#social_buttons').css({
+                                        position: 'fixed',
+                                        top: '400px',
+                                        left: $('#social_buttons').offset().left
+                                    });
+                                }
                             }
                         }
                 );
 
                 $(window).scroll(function () {
+                    if ($(window).width() > 767) {
 
-                    var scrollTop = $(window).scrollTop(),
-                            elementOffset = $('#social_buttons').offset().top,
-                            distance = (elementOffset - scrollTop);
+                        var scrollTop = $(window).scrollTop(),
+                                elementOffset = $('#social_buttons').offset().top,
+                                distance = (elementOffset - scrollTop);
 
-                    if (distance < 400) {
-                        dist_top_changed = elementOffset;
-                        $('#social_buttons').css({
-                            position: 'fixed',
-                            top: '400px',
-                            left: $('#social_buttons').offset().left
-                        });
-
-                    } else {
-                        if (elementOffset < dist_top_changed) {
+                        if (distance < 400) {
+                            dist_top_changed = elementOffset;
                             $('#social_buttons').css({
-                                top: '0px',
-                                position: 'relative',
-                                left: '0px'
+                                position: 'fixed',
+                                top: '400px',
+                                left: $('#social_buttons').offset().left
                             });
+
+                        } else {
+                            if (elementOffset < dist_top_changed) {
+                                $('#social_buttons').css({
+                                    top: '0px',
+                                    position: 'relative',
+                                    left: '0px'
+                                });
+                            }
                         }
+
                     }
-
-
                 });
-            }
         });
     });
 </script>
