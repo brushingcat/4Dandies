@@ -48,7 +48,7 @@ footer {
 }
 
 footer .row-info {
-    padding: 40px 30px 40px 30px;
+    padding: 40px 30px 30px 30px;
     margin: 0px 0px 0px 0px;
 }
 
@@ -104,4 +104,26 @@ footer p {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
     -webkit-transform: scale(2.2);
     transform: scale(2.2);
+}
+
+@media (max-width: 991px) {
+    footer .footer-info {
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+    footer .follow_us {
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    footer .row-copyright-social {
+        height: inherit;
+        padding: 0px 30px 20px 30px;
+    }
+
+    footer .copyright p {
+        margin: 0;
+    }
 }
