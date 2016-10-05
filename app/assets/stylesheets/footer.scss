@@ -64,14 +64,10 @@ footer .copyright p {
 }
 
 footer .social-buttons {
-  margin-left: 15px;
-  float: none;
-  margin: auto;
-  text-align: right;
   font-size: 20px;
-  width: 100%;
   top: 50%;
   transform: translatey(-50%);
+  text-align: right;
 }
 
 footer .social-buttons a + a {
@@ -103,10 +99,20 @@ footer .link{
 @media (max-width: 767px) {
   footer .footer-bottom .social-buttons {
     text-align: center;
-    font-size: inherit;
+    top: 0;
+    transform: none;
   }
 
   footer .footer-bottom .copyright {
     text-align: center;
+  }
+
+  footer .footer-bottom .copyright p {
+    margin: 10px 0px;
+  }
+
+  footer .footer-bottom {
+    height: inherit;
+    margin: 0;
   }
 }
