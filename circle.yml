@@ -15,5 +15,3 @@ database:
 test:
   override:
     - bundle exec rspec
-  post:
-    - bash <(curl -s https://codecov.io/bash) -X coveragepy

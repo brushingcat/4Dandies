@@ -3,9 +3,6 @@
 # all repositories on Codecov. You may adjust the settings
 # below in your own codecov.yml in your repository.
 #
-codecov:
-  branch: null
-  bot: null
 
 coverage:
   precision: 2
