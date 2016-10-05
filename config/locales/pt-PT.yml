@@ -28,7 +28,7 @@ pt:
       blog: "BLOG"
       brands: "MARCAS"
       contact: "CONTACTO"
-      subscribe: "SUBSCREVE"
+      subscribe: "Subscreve"
     footer:
       help: "Ajuda"
       privacy_policy: "Política de Privacidade"
@@ -36,7 +36,9 @@ pt:
       terms:  "Termos"
       blog:
         html: "At 4Dandies we look to introduce great emerging brands and designers.</br> At 4U we look to tell their stories."
+        read_last_post: "Lê o ultimo post"
       be_first: "Be the first to know about more about us and products."
       sign_up: "Sign up for email storytelling"
+      copyright: "@2016 4Dandies. All Rights Reserved."
   subscribe:
     join_community: "Junta-te a nossa comunidade"
