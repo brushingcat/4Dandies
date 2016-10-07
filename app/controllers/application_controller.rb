@@ -15,11 +15,11 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     #I18n.locale =request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
-    I18n.locale = get_locale || http_accept_language.compatible_language_from(I18n.available_locales) ||
+    I18n.locale = param_locale || http_accept_language.compatible_language_from(I18n.available_locales) ||
         I18n.default_locale
   end
 
-  def get_locale
+  def param_locale
     if params.has_key? :locale
       params[:locale] if I18n.locale_available? params[:locale]
     end
