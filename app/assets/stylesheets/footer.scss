@@ -1,172 +1,118 @@
-footer .title {
-  color: #f4f4f4;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  display: block;
-}
-
-footer .description {
-  color: #c9c9c9;
-  margin: 0px 0px 20px 0px;
-}
-
-footer .help-link {
-  margin-bottom: 10px;
-}
-
-footer .link {
-  color: #f4f4f4;
-  cursor: pointer;
-}
-
-footer .link {
-  text-transform: uppercase;
-}
-
-footer .blog-title {
-  color: #f4f4f4;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-footer .blog-description {
-  color: #c9c9c9;
-  margin-bottom: 10px;
-}
-
-footer .blog-description a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #28c891;
-}
-
-footer .blog-link {
-  display: block;
-  margin-top: 10px;
-  color: #28c891;
-}
-
-footer .blog-img {
-  display: block;
-  width: 95%;
-  max-width: 100px;
-  min-width: 60px;
-  border: 0;
-}
-
-footer .image-wrapper {
-  float: left;
-  margin: 0 3% 0 0;
-}
-
-footer .blog-img {
-  display: block;
-  width: 95%;
-  max-width: 100px;
-  min-width: 60px;
-  border: 0;
-}
-
-footer .description-wrapper {
-  float: left;
-  width: calc(100% - 3% - 100px);
-  color: #f4f4f4;
-}
-
 footer {
-  background-image: image_url('footer.png');
-  font-size: 14px !important;
-  font-family: 'Helvetica' !important;
+  background-image: url('footer.png');
   background-size: 800px;
   background-color: #050505;
-  width: 100%;
-  overflow: hidden;
+  min-height: 200px;
+  color: white;
 }
 
-footer .row-info {
-  padding: 40px 30px 40px 30px;
-  margin: 0px 0px 0px 0px;
+footer .footer-info ul {
+  padding: 0;
+  list-style: none;
 }
 
-footer .row-copyright-social {
+footer .footer-info li+li {
+  margin-top: 10px;
+}
+
+footer .footer-info li>a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .blog {
+  display: flex;
+}
+
+footer .blog-img {
+  display: block;
+  width: 95%;
+  max-width: 100px;
+  min-width: 60px;
+  border: 0;
+}
+
+footer div .blog-img {
+  margin-right: 20px;
+}
+
+footer .footer-top {
+  padding: 40px;
+}
+
+footer .footer-bottom {
   width: 100%;
   padding: 0px 30px 0px 30px;
   margin: 0px 0px 20px 0px;
   height: 65px;
 }
 
-.social-buttons a + a {
-  margin-left: 15px;
-}
-
-footer div .copyright {
+footer .social-buttons,
+footer .copyright {
   margin: auto;
 }
 
-footer div .social-buttons {
-  margin-left: 15px;
-  float: none;
-  display: table-cell;
-  margin: auto;
-  text-align: right;
-  font-size: 20px;
+footer .social-buttons a {
+  color: white
 }
 
-footer i {
-  color: white;
-}
-
-footer p {
+footer .copyright p {
   margin: 23.5px 0;
   font-size: 12px;
   color: white;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.cl-effect-4 {
-  text-decoration: none;
+footer .social-buttons {
+  font-size: 20px;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: right;
 }
 
-.cl-effect-4 a::after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  max-height: 1px;
-  background: #fff;
-  content: '';
-  opacity: 0;
-  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
-  transition: height 0.3s, opacity 0.3s, transform 0.3s;
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  transform: translateY(-10px);
+footer .social-buttons a + a {
+  margin-left: 15px;
 }
 
-.cl-effect-4 a:hover::after,
-.cl-effect-4 a:focus::after {
-  height: 5px;
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  transform: translateY(0px);
-}
 
-footer nav a {
-  position: relative;
-  display: inline-block !important;
+footer .link{
   outline: none;
-  color: #ffffff;
-  text-decoration: none !important;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  color: #28c891;
 }
 
-footer nav a:hover,
-footer nav a:focus {
-  outline: none;
+
+@media (max-width: 991px) {
+  footer .blog,
+  footer .footer-info {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  footer .footer-subscribe {
+    margin-top: 20px;
+  }
+
 }
 
+@media (max-width: 767px) {
+  footer .footer-bottom .social-buttons {
+    text-align: center;
+    top: 0;
+    transform: none;
+  }
+
+  footer .footer-bottom .copyright {
+    text-align: center;
+  }
+
+  footer .footer-bottom .copyright p {
+    margin: 10px 0px;
+  }
+
+  footer .footer-bottom {
+    height: inherit;
+    margin: 0;
+  }
+}

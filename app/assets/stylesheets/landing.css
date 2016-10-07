@@ -2,7 +2,6 @@
 
 .hvr-grow {
     display: inline-block;
-    vertical-align: middle;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -61,7 +60,7 @@ body.modal-open .modal{
 /* Brand Carousel */
 
 #carousel-demo1 {
-    margin: 2.5vh;
+    margin: 2.5vh 0px;
     color: #050505;
     display: flex;
     align-items: center;

@@ -49,7 +49,7 @@ en:
       blog: "BLOG"
       brands: "BRANDS"
       contact: "CONTACT"
-      subscribe: "SUBSCRIBE"
+      subscribe: "Subscribe"
     footer:
       help: "Help"
       privacy_policy: "Privacy Policy"
@@ -57,7 +57,11 @@ en:
       terms:  "Terms"
       blog:
         html: "At 4Dandies we look to introduce great emerging brands and designers.</br> At 4U we look to tell their stories."
+        read_last_post: "Read the latest post"
       be_first: "Be the first to know about more about us and products."
       sign_up: "Sign up for email storytelling"
+      copyright: "@2016 4Dandies. Todos os direitos reservados."
   subscribe:
     join_community: "Join our community"
+    or: "Or Be Classical"
+    join_us: "Join us"

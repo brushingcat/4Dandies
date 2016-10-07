@@ -5,64 +5,41 @@
       <%= render "users/shared/subscribe" %>
     </div>
   </div>
-  <div>
-    <div class="row row-info">
-      <div class="col-sm-4">
-        <section class="footer-section blog">
-          <div class="footer-section-wrapper">
-            <div class="image-wrapper">
-              <img alt="Blog Logo" class="blog-img" src="<%= asset_path 'blog_logo.png' %>">
-            </div>
-            <div class="description-wrapper">
-              <div class="blog-title">4u</div>
-              <div class="blog-description"><%= t('landing.footer.blog.html') %>
-                <nav class="cl-effect-4" id="cl-effect-4">
-                  <a class="blog-link" href="<%= blog_path %>">Read
-                    the latest post</a>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="col-sm-4">
-        <div class="col-sm-6 col-xs-12">
-          <div class="help-link one">
-            <a class="link" href="/help"><%= t('landing.footer.help') %></a>
-          </div>
-          <div class="help-link five">
-            <a class="link" href="/privacy"><%= t('landing.footer.privacy_policy') %></a>
-          </div>
+  <div class="container-fluid">
+    <div class="row footer-top">
+      <div class="col-md-4 col-sm-12 blog">
+        <div class="blog-img">
+          <img style="max-width:100px; min-width:60px;" alt="Blog Logo" class="blog-img" src="<%= asset_path 'blog_logo.png' %>">
         </div>
-        <div class="col-sm-6 col-xs-12">
-          <div class="help-link six">
-            <a class="link" href="mailto:social@4dandies.com" target="_top"><%= t('landing.footer.email_us') %></a>
-          </div>
-          <div class="help-link six">
-            <a class="link" href="/terms"><%= t('landing.footer.terms') %></a>
-          </div>
+        <div>
+          <p>4U</p>
+          <p><%= t('landing.footer.blog.html') %></p>
+          <p class="link" href="<%= blog_path %>"><%= t('landing.footer.blog.read_last_post') %></p>
         </div>
       </div>
-      <div class="col-sm-4">
-        <section class="footer-section newsletter">
-          <div class="title"><%= t('landing.footer.be_first') %></div>
-          <div class="description"><%= t('landing.footer.sign_up') %>
-          </div>
-        </section>
-        <section>
-          <nav class="cl-effect-4" id="cl-effect-4">
-            <a href=#myModal class="blog-link" data-toggle="modal" data-target="#myModal">Subscribe</a >
-          </nav>
-        </section>
+      <div class="col-md-4 col-sm-12 footer-info">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <ul>
+            <li><a href="/help"><%= t('landing.footer.help') %></a></li>
+            <li><a href="/privacy"><%= t('landing.footer.privacy_policy') %></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <ul>
+            <li><a href="mailto:social@4dandies.com" target="_top"><%= t('landing.footer.email_us') %></a></li>
+            <li><a href="/terms"><%= t('landing.footer.terms') %></a></li>
+          </ul>
+        </div>
+        <div class="clearfix visible-xs-block"></div>
+      </div>
+      <div class="col-md-4 col-sm-12 footer-subscribe">
+        <p><%= t('landing.footer.be_first') %></p>
+        <p><%= t('landing.footer.sign_up') %></p>
+        <a href=#myModal class="link" data-toggle="modal" data-target="#myModal"><%= t('landing.navbar.subscribe') %></a >
       </div>
     </div>
-    <div class="row row-eq-height row-copyright-social">
-      <div class="col-sm-5 copyright">
-        <p>
-          @1893-2016 4dandies. All Rights Reserved.
-        </p>
-      </div>
-      <div class="col-sm-7 social-buttons">
+    <div class="row footer-bottom">
+      <div class="col-md-6 col-sm-push-6 col-sm-6 col-xs-12 social-buttons">
         <a href="<%= instagram_path %>" target="_blank"><i class="fa fa-instagram hvr-grow"></i></a>
         <a href="<%= facebook_path %>" target="_blank"><i class="fa fa-facebook hvr-grow"></i></a>
         <a href="<%= pinterest_path %>" target="_blank"><i class="fa fa-pinterest hvr-grow"></i></a>
@@ -70,7 +47,11 @@
         <a href="<%= youtube_path %>" target="_blank"><i class="fa fa-youtube-play hvr-grow"></i></a>
         <a href="<%= google_plus_path %>" target="_blank"><i class="fa fa-google-plus-square hvr-grow"></i></a>
       </div>
+      <div class="col-md-6 col-sm-pull-6 col-sm-6 col-xs-12 copyright">
+        <p>
+          <%= t('landing.footer.copyright') %>
+        </p>
+      </div>
     </div>
   </div>
-
 </footer>

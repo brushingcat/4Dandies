@@ -38,7 +38,7 @@ pt:
       send_paranoid_instructions: 'Se o seu e-mail existir na nossa base de dados, irá receber dentro de alguns minutos um e-mail com instruções para confirmar a sua conta.'
       confirmed: 'A sua conta foi confirmada com sucesso. Agora está autenticado.'
     registrations:
-      signed_up: 'Subscrito com sucesso'
+      signed_up: 'Obrigado por se juntar a nós'
       signed_up_but_unconfirmed: 'A mensagem com o link de confirmação foi enviada para o seu endereço de e-mail. Por favor clique no link para ativar a sua conta.'
       signed_up_but_inactive: 'A autenticação foi efetuada com sucesso. No entanto, não foi possível autorizá-lo porque a sua conta ainda não está ativa.'
       signed_up_but_locked: 'A autenticação foi efetuada com sucesso. No entanto, não foi possível autorizá-lo porque a sua conta está bloqueada.'
@@ -50,7 +50,7 @@ pt:
       unlocked: 'A sua conta foi desbloqueada com sucesso. Agora está autenticado.'
       send_paranoid_instructions: 'Se a sua conta existir, irá receber dentro de alguns minutos um e-mail com instruções para a desbloquear.'
     omniauth_callbacks:
-      success: 'Subscrito com sucesso'
+      success: 'Obrigado por se juntar a nós'
       failure: 'Subscrição falhada'
     mailer:
       confirmation_instructions:
