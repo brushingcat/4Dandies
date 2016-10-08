@@ -12,3 +12,21 @@ describe 'Subscribe with email' do
   end
 
 end
+
+feature "subscribe" do
+
+  scenario "subscribe in with correct data" do
+
+    expect {
+      visit '/pt/subscribe/'
+
+      within("//div[@id='full']") do
+        fill_in 'user_name', with: 'Teste'
+        fill_in 'user_email', with: 'user@example.com'
+        click_button 'Junta-te a nós'
+      end
+    }.to change{User.count}
+
+    #Ainda se pode no futuro testar se aparece a notificação
+  end
+end
