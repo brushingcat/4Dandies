@@ -27,6 +27,9 @@ feature "subscribe" do
       end
     }.to change{User.count}
 
-    #Ainda se pode no futuro testar se aparece a notificação
+    #It Makes possible to look up non visible elements
+    Capybara.ignore_hidden_elements = false
+
+    expect(page).to have_content 'Obrigado por se juntar a nós'
   end
 end
