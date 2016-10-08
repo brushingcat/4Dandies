@@ -39,6 +39,8 @@ gem 'capybara'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platform: :mri
+  #gem 'rails-erd'
+  gem 'railroady'
 end
 
 group :development do
