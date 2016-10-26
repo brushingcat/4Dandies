@@ -86,7 +86,7 @@ body i{
     display:         flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .img-right:before, .img-left-2:before, .img-left:before {
         content: '';
         position:absolute;
